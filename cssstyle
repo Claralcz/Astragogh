@@ -1,0 +1,741 @@
+.astragogh-responsive {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  min-width: 390px;
+  min-height: 6991px;
+  position: relative;
+}
+
+.astragogh-responsive .au-quotidien {
+  position: absolute;
+  top: 19px;
+  left: 16px;
+  width: 47px;
+  height: 49px;
+}
+
+.astragogh-responsive .text-wrapper {
+  position: absolute;
+  top: 165px;
+  left: 30px;
+  width: 331px;
+  font-family: "Cinzel", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 55px;
+  letter-spacing: -1.10px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.astragogh-responsive .div {
+  position: absolute;
+  top: 251px;
+  left: 32px;
+  width: 328px;
+  height: 288px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #000000bf;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.astragogh-responsive .button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 32px;
+  position: absolute;
+  top: 566px;
+  left: 115px;
+  background-color: #284d80;
+  border-radius: 8px;
+  box-shadow: var(--button-shadow);
+}
+
+.astragogh-responsive .text-wrapper-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+  white-space: nowrap;
+}
+
+.astragogh-responsive .images {
+  top: 507px;
+  left: calc(50.00% + 120px);
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.astragogh-responsive .text-wrapper-3 {
+  position: absolute;
+  top: 81px;
+  left: 16px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.astragogh-responsive .text-wrapper-4 {
+  position: absolute;
+  top: 81px;
+  left: 96px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.astragogh-responsive .text-wrapper-5 {
+  position: absolute;
+  top: 81px;
+  left: 187px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.astragogh-responsive .div-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  width: 66px;
+  height: 30px;
+  padding: 14px 24px;
+  top: 81px;
+  left: 306px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  background-color: #284d80;
+  border-radius: 8px;
+  box-shadow: var(--button-shadow);
+}
+
+.astragogh-responsive .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 388px;
+}
+
+.astragogh-responsive .img {
+  position: absolute;
+  top: 336px;
+  left: calc(50.00% + 98px);
+  width: 53px;
+  height: 53px;
+  object-fit: cover;
+}
+
+.astragogh-responsive .group-3 {
+  position: absolute;
+  top: 1082px;
+  left: 45px;
+  width: 300px;
+  height: 206px;
+  display: flex;
+}
+
+.astragogh-responsive .group-4 {
+  width: 300px;
+  display: flex;
+}
+.astragogh-responsive .text-wrapper-6 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -12.00px;
+  margin-bottom: -10.00px;
+  margin-left: -23.00px;
+  margin-right: -23.00px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.astragogh-responsive .text-wrapper-7 {
+  position: absolute;
+  top: 23px;
+  left: 70px;
+  width: 249px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cinzel", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.astragogh-responsive .astragogh-ouvres {
+  top: 861px;
+  left: -4px;
+  height: 3758px;
+  position: absolute;
+  width: 390px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.astragogh-responsive .text-wrapper-8 {
+  position: absolute;
+  top: 16px;
+  left: calc(50.00% - 106px);
+  width: 212px;
+  font-family: "Cinzel", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: -0.96px;
+  line-height: normal;
+}
+
+.astragogh-responsive .group {
+  position: absolute;
+  top: 91px;
+  left: 8px;
+  width: 374px;
+  height: 484px;
+}
+
+.astragogh-responsive .copy {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  position: absolute;
+  top: 501px;
+  left: 45px;
+}
+
+.astragogh-responsive .text-wrapper-9 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.astragogh-responsive .p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #828282;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.astragogh-responsive .group-wrapper {
+  position: absolute;
+  top: 672px;
+  left: 15px;
+  width: 381px;
+  height: 764px;
+  display: flex;
+}
+
+.astragogh-responsive .group-2 {
+  width: 300.77px;
+  height: 388.77px;
+  margin-left: 30px;
+  position: relative;
+}
+
+
+.astragogh-responsive .group-5 {
+  width: 304px;
+  height: 206px;
+  position: relative;
+}
+
+.astragogh-responsive .text-wrapper-10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.astragogh-responsive .text-wrapper-11 {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #828282;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.astragogh-responsive .copy-2 {
+  top: 1700px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  position: absolute;
+  left: 44px;
+}
+
+.astragogh-responsive .group-6 {
+  position: absolute;
+  top: 1288px;
+  left: 44px;
+  width: 301px;
+  height: 389px;
+}
+
+.astragogh-responsive .copy-3 {
+  top: 2319px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  position: absolute;
+  left: 44px;
+}
+
+.astragogh-responsive .sans-titre {
+  position: absolute;
+  top: 1913px;
+  left: 46px;
+  width: 299px;
+  height: 383px;
+}
+
+.astragogh-responsive .images-2 {
+  top: 2243px;
+  left: calc(50.00% + 97px);
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.astragogh-responsive .copy-4 {
+  top: 2951px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  position: absolute;
+  left: 44px;
+}
+
+.astragogh-responsive .image-2 {
+  top: 2545px;
+  width: 298px;
+  height: 382px;
+  position: absolute;
+  left: 44px;
+}
+
+.astragogh-responsive .images-3 {
+  top: 2875px;
+  left: calc(50.00% + 97px);
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.astragogh-responsive .copy-5 {
+  top: 3586px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  position: absolute;
+  left: 44px;
+}
+
+.astragogh-responsive .image-3 {
+  top: 3172px;
+  width: 300px;
+  height: 388px;
+  object-fit: cover;
+  position: absolute;
+  left: 44px;
+}
+
+.astragogh-responsive .images-4 {
+  top: 3508px;
+  left: calc(50.00% + 97px);
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.astragogh-responsive .astragogh-biographie {
+  top: 4675px;
+  left: -4px;
+  height: 1644px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 390px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.astragogh-responsive .text-wrapper-12 {
+  margin-left: 52px;
+  width: 286px;
+  height: 65px;
+  margin-top: 77px;
+  font-family: "Cinzel", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: -0.96px;
+  line-height: normal;
+}
+
+.astragogh-responsive .capture-d-cran {
+  margin-left: 47px;
+  width: 293px;
+  height: 344px;
+  margin-top: 38px;
+}
+
+.astragogh-responsive .group-7 {
+  margin-left: 45px;
+  width: 424px;
+  height: 1047px;
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.astragogh-responsive .group-8 {
+  width: 424px;
+  display: flex;
+}
+
+.astragogh-responsive .group-9 {
+  width: 428px;
+  height: 333px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.astragogh-responsive .text-wrapper-13 {
+  width: 424px;
+  height: 36px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.astragogh-responsive .text-wrapper-14 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 294.74px;
+  height: 288px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #828282;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.astragogh-responsive .text-wrapper-15 {
+  margin-left: 1.8px;
+  width: 422.16px;
+  height: 36px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.astragogh-responsive .text-wrapper-16 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 293.4px;
+  height: 288px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #828282;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.astragogh-responsive .text-wrapper-17 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 294.64px;
+  height: 288px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #828282;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.astragogh-responsive .astragogh-contact {
+  top: 6323px;
+  left: 0;
+  height: 668px;
+  position: absolute;
+  width: 390px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.astragogh-responsive .text-wrapper-18 {
+  position: absolute;
+  top: 77px;
+  left: calc(50.00% - 114px);
+  width: 228px;
+  font-family: "Cinzel", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: -0.96px;
+  line-height: normal;
+}
+
+.astragogh-responsive .text-wrapper-19 {
+  position: absolute;
+  top: 162px;
+  left: 16px;
+  width: 626px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.astragogh-responsive .field {
+  width: 358px;
+  height: 48px;
+  padding: 12px 16px;
+  position: absolute;
+  top: 187px;
+  left: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #dfdfdf;
+  box-shadow: var(--button-shadow);
+  flex: 1;
+  margin-top: -1.00px;
+  font-family: var(--small-text-font-family);
+  font-weight: var(--small-text-font-weight);
+  color: #828282;
+  font-size: var(--small-text-font-size);
+  letter-spacing: var(--small-text-letter-spacing);
+  line-height: var(--small-text-line-height);
+  font-style: var(--small-text-font-style);
+}
+
+.astragogh-responsive .text-wrapper-20 {
+  position: absolute;
+  top: 254px;
+  left: 16px;
+  width: 626px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #1e1e1e;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.astragogh-responsive .label-wrapper {
+  display: flex;
+  width: 358px;
+  height: 195px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px 16px;
+  position: absolute;
+  top: 280px;
+  left: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #dfdfdf;
+  box-shadow: var(--button-shadow);
+}
+
+.astragogh-responsive .label {
+  position: relative;
+  flex: 1;
+  margin-top: -1.00px;
+  font-family: var(--small-text-font-family);
+  font-weight: var(--small-text-font-weight);
+  color: #828282;
+  font-size: var(--small-text-font-size);
+  letter-spacing: var(--small-text-letter-spacing);
+  line-height: var(--small-text-line-height);
+  font-style: var(--small-text-font-style);
+}
+
+.astragogh-responsive .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  width: 299px;
+  padding: 16px 32px;
+  top: 488px;
+  left: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  background-color: #284d80;
+  border-radius: 8px;
+  box-shadow: var(--button-shadow);
+}
+
+.astragogh-responsive .text-wrapper-21 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Libre Baskerville", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.astragogh-responsive .navigation-footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 1px;
+  height: 72px;
+}
+
+.astragogh-responsive .capture-d-cran-2 {
+  top: 0;
+  height: 72px;
+  position: absolute;
+  left: 0;
+  width: 390px;
+}
+
+.astragogh-responsive .capture-d-cran-3 {
+  top: 669px;
+  height: 192px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  width: 390px;
+}
+
+.astragogh-responsive .capture-d-cran-4 {
+  top: 4639px;
+  height: 76px;
+  position: absolute;
+  left: 0;
+  width: 390px;
+}
