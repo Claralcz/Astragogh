@@ -706,7 +706,8 @@ body { font-family: var(--font-body); line-height: 1.6; }
   cursor: pointer;
 }
 
-.itemps .div:hover {
+.items .div:hover {
   border-bottom: 2px solid #1abc9c;
 }
+
 
