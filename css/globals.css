@@ -641,39 +641,3 @@
   letter-spacing: 0;
   line-height: 24px;
 }
-
-.items .div {
-  position: relative;
-  cursor: pointer;
-  color: #333;
-}
-
-.items .div::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #1abc9c;
-  transition: width 0.3s ease;
-}
-
-.items .div:hover::after {
-  width: 100%;
-}
-
-.button {
-  background-color: #3498db;
-  border: none;
-  border-radius: 6px;
-  padding: 10px 20px;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.button:hover {
-  background-color: #1abc9c;
-  transform: scale(1.05);
-}
