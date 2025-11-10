@@ -870,5 +870,61 @@ body { font-family: var(--font-body); line-height: 1.6; }
   .astragogh-desktop .images-7 {
     display: none !important;
   }
+  /*ここから並び順固定化 */
+  .astragogh-desktop { display: flex; flex-direction: column; }
+
+  /* 1) ヘッダー */
+  .astragogh-desktop .navigation { order: 10; }
+
+  /* 2) ヒーロー（テキスト → 大きい帯画像） */
+  .astragogh-desktop .copy-4 { order: 20; }   /* タイトル＆説明＆CTA */
+  .astragogh-desktop .image   { order: 30; }  /* 横幅いっぱいの帯画像 */
+
+  /* 3) 作品セクション（見出し → 各カード：画像→説明の順） */
+  .astragogh-desktop .text-wrapper-3 { order: 40; } /* "Oeuvres" */
+
+  .astragogh-desktop .image-3 { order: 50; }  /* 作品1 画像 */
+  .astragogh-desktop .copy    { order: 60; }  /* 作品1 説明 */
+
+  .astragogh-desktop .image-4 { order: 70; }  /* 作品2 画像 */
+  .astragogh-desktop .copy-3  { order: 80; }  /* 作品2 説明 */
+
+  .astragogh-desktop .image-5 { order: 90; }  /* 作品3 画像 */
+  .astragogh-desktop .copy-2  { order: 100; } /* 作品3 説明 */
+
+  .astragogh-desktop .image-2 { order: 110; } /* セクション区切り帯（任意） */
+
+  /* 4) 伝記セクション（見出し → テキスト群 → 画像） */
+  .astragogh-desktop .text-wrapper-5 { order: 120; } /* "Biographie" */
+  .astragogh-desktop .text          { order: 130; }  /* 伝記テキスト */
+  .astragogh-desktop .sans-titre    { order: 140; }  /* 関連画像 */
+
+  /* 5) お問い合わせ（見出し → 入力欄 → メッセージ欄 → 送信ボタン） */
+  .astragogh-desktop .section  { order: 150; } /* "Contact" の見出し */
+  .astragogh-desktop .form     { order: 160; } /* メールアドレス欄 */
+  .astragogh-desktop .input-2  { order: 170; } /* メッセージ欄（textareaに変更済みの想定） */
+  .astragogh-desktop .button-2 { order: 180; } /* 送信ボタン */
+
+  /* 6) フッター帯画像（任意で最後に） */
+  .astragogh-desktop .img { order: 190; }
+
+  /* 作品カードのまとまり */
+  .astragogh-desktop .image-3,
+  .astragogh-desktop .image-4,
+  .astragogh-desktop .image-5 {
+    margin-bottom: 8px;
+    border-radius: 12px;
+  }
+  .astragogh-desktop .copy,
+  .astragogh-desktop .copy-2,
+  .astragogh-desktop .copy-3 {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 16px;
+  }
+
+  /* 伝記の段落の間隔を少し広げる */
+  .astragogh-desktop .text-2 { gap: 6px; }
+  .astragogh-desktop .text   { gap: 14px; }
 }
 
