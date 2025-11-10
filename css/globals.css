@@ -1,3 +1,61 @@
+/* --- responsive base (safe) --- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+img, video { max-width: 100%; height: auto; display: block; }
+
+iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }
+
+:root {
+  --container-max: 1200px; /* 必要に応じて後でFigma値へ */
+  --container-pad: 16px;
+  --gap: 16px;
+  --radius: 12px;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+body { font-family: var(--font-body); line-height: 1.6; }
+
+.container {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+/* 650px以下：デスクトップ出来上がり前提の上書き */
+@media (max-width: 650px) {
+  /* タイポ最小値（Figma基準幅: 390px を想定） */
+  h1 { font-size: clamp(22px, 6vw, 32px); line-height: 1.25; }
+  h2 { font-size: clamp(18px, 5vw, 24px); line-height: 1.3; }
+  body, p, li { font-size: clamp(14px, 4vw, 16px); }
+
+  /* よくある横並びを縦積みに */
+  .grid-2, .grid-3, .grid-4, .grid-auto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+  }
+
+  /* フレックスの安全な折返し */
+  .row, .flex-row {
+    display: flex; flex-direction: column; gap: var(--gap);
+  }
+
+  /* テーブル横スクロールの暫定対応 */
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* 画像/カードの角丸（任意） */
+  .card { border-radius: var(--radius); overflow: hidden; }
+
+  /* 余白が詰まりがちなセクションを少し広げる（必要なら削除） */
+  section { padding-block: 20px; }
+}
+/* ここまで追加1 */
+
+
 .astragogh-desktop {
   background-color: #ffffff;
   overflow: hidden;
@@ -651,3 +709,4 @@
 .itemps .div:hover {
   border-bottom: 2px solid #1abc9c;
 }
+
