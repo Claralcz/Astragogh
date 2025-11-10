@@ -641,3 +641,13 @@
   letter-spacing: 0;
   line-height: 24px;
 }
+
+.items .div:hover {
+  border-bottom: 2px solid transparents;
+  transition: border-color 0.3 ease;
+  cursor: pointer;
+}
+
+.itemps .div:hover {
+  border-bottom: 2px solid #1abc9c;
+}
