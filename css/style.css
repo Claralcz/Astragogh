@@ -25,5 +25,6 @@ a {
 }
 
 .items .div:hover {
-  border-bottom: 2px solid #0b3d91;
+  border-bottom: 2px solid #0b3d91 !important;
 }
+
