@@ -449,22 +449,258 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   height: 211px;
 }
 
-/* モバイルは幅100%で自然に流し込み（任意） */
-@media (max-width: 650px){
-  .astragogh-desktop .image-2--contact{
-    position: static !important;
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
+
+/* =========================
+   ここからスマホ版レイアウト
+   ========================= */
+@media (max-width: 650px) {
+
+  /* ページ本体を「普通の縦長レイアウト」にする */
+  .astragogh-desktop {
+    min-width: 0;
+    width: 100%;
+    min-height: auto;
+    overflow: visible;
+    position: static;
   }
+
+  /* すべての img の絶対配置を解除（PC 用の top/left 無効化） */
+  .astragogh-desktop img {
+    position: static;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ヘッダー（ロゴ＋タイトル） */
+  .astragogh-desktop .navigation-footer {
+    position: static;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: 16px 0 0 16px;
+  }
+
+  .astragogh-desktop .navigation {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 8px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+  }
+
+  .astragogh-desktop .text-wrapper {
+    margin: 0 0 8px 12px;
+    width: auto;
+    height: auto;
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .astragogh-desktop .items {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .astragogh-desktop .div {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .astragogh-desktop .button {
+    padding: 6px 12px;
+  }
+
+  .astragogh-desktop .text-wrapper-2 {
+    font-size: 14px;
+  }
+
+  /* ヒーロー（ASTRAGOGH 見出しや本文部） */
+  .astragogh-desktop .copy-4 {
+    position: static;
+    width: auto;
+    margin: 24px 16px 32px;
+    gap: 24px;
+  }
+
+  .astragogh-desktop .page-title {
+    align-items: flex-start;
+  }
+
+  .astragogh-desktop .text-wrapper-9 {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .astragogh-desktop .text-wrapper-10 {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .astragogh-desktop .div-wrapper {
+    align-self: center;
+    margin-top: 16px;
+  }
+
+  /* 上部の横長の夜空画像 */
+  .astragogh-desktop .image {
+    width: 100%;
+    margin: 24px 0 0;
+  }
+
+  /* 作品一覧の見出し Oeuvres */
+  .astragogh-desktop .text-wrapper-3 {
+    position: static;
+    width: 100%;
+    margin: 32px 0 16px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  /* 作品画像を縦並びに */
+  .astragogh-desktop .image-3,
+  .astragogh-desktop .image-4,
+  .astragogh-desktop .image-5,
+  .astragogh-desktop .image-6,
+  .astragogh-desktop .image-7 {
+    margin: 16px auto 0;
+    width: 80%;
+  }
+
+  /* 作品テキストブロックを画像の下に縦積み */
+  .astragogh-desktop .copy,
+  .astragogh-desktop .copy-2,
+  .astragogh-desktop .copy-3,
+  .astragogh-desktop .copy-5,
+  .astragogh-desktop .copy-6,
+  .astragogh-desktop .copy-7 {
+    position: static;
+    width: auto;
+    margin: 8px 16px 24px;
+  }
+
+  .astragogh-desktop .text-wrapper-4 {
+    font-size: 20px;
+  }
+
+  .astragogh-desktop .p {
+    font-size: 18px;
+    line-height: 1.5;
+    justify-content: flex-start;
+  }
+
+  /* 紙飛行機の小さいアイコンはスマホでは非表示にしておく */
+  .astragogh-desktop .images,
+  .astragogh-desktop .images-2,
+  .astragogh-desktop .images-3,
+  .astragogh-desktop .images-4,
+  .astragogh-desktop .images-5,
+  .astragogh-desktop .images-6,
+  .astragogh-desktop .images-7 {
+    display: none;
+  }
+
+  /* Biographie セクション */
+  .astragogh-desktop .sans-titre {
+    position: static;
+    width: 80%;
+    margin: 32px auto 0;
+  }
+
+  .astragogh-desktop .text-wrapper-5 {
+    position: static;
+    margin: 24px 0 16px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .astragogh-desktop .text {
+    position: static;
+    width: auto;
+    margin: 0 16px 32px;
+    align-items: flex-start;
+  }
+
+  .astragogh-desktop .text-wrapper-6 {
+    width: auto;
+    font-size: 20px;
+  }
+
+  .astragogh-desktop .text-wrapper-7 {
+    width: auto;
+    font-size: 18px;
+    justify-content: flex-start;
+  }
+
+  /* Biographie の上の区切り画像（既存 .image-2 をそのまま使う） */
+  .astragogh-desktop .image-2 {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 32px 0 0;
+  }
+
+  /* Contact セクション見出しと区切り画像 */
+  .astragogh-desktop .section {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+    display: block;
+    text-align: center;
+  }
+
+  .astragogh-desktop .section::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 80px;
+    background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/image-12.png")
+                center / cover no-repeat;
+    margin-bottom: 24px;
+  }
+
+  .astragogh-desktop .text-wrapper-8 {
+    margin: 0 0 24px;
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /* Contact フォーム部分 */
+  .astragogh-desktop .form {
+    position: static;
+    width: auto;
+    margin: 0 16px 16px;
+  }
+
+  .astragogh-desktop .input {
+    width: 100%;
+  }
+
+  .astragogh-desktop .input-2 {
+    position: static;
+    width: auto;
+    margin: 8px 16px 16px;
+  }
+
+  .astragogh-desktop .button-2 {
+    position: static;
+    width: 70%;
+    max-width: 320px;
+    margin: 16px auto 0;
+  }
+
+  /* フッターはそのままで OK（幅100vw の帯） */
+
 }
-
-
-
-
-
-
-
-
-
-
