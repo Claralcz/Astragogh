@@ -1193,4 +1193,50 @@ body { font-family: var(--font-body); line-height: 1.6; }
   }
 }
 
+/* ===== Desktop fixes: Contact以降を通常フローへ（>=651px） ===== */
+@media (min-width: 651px) {
+
+  /* 絶対座標をやめ、文書の流れに戻す */
+  .astragogh-desktop .section,
+  .astragogh-desktop .form,
+  .astragogh-desktop .input-2,
+  .astragogh-desktop .button-2,
+  .astragogh-desktop .img {
+    position: static !important;
+    inset: auto !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* 見出し */
+  .astragogh-desktop .section {
+    display: block !important;
+    padding: 40px 0 8px !important;
+  }
+
+  /* 入力2つは中央寄せの1カラムに */
+  .astragogh-desktop .form,
+  .astragogh-desktop .input-2 {
+    max-width: 720px !important;
+    margin: 0 auto 16px !important;
+    gap: 12px !important;
+  }
+
+  /* 送信ボタンは下に大きめ余白をとってからフッター画像へ */
+  .astragogh-desktop .button-2 {
+    max-width: 320px !important;
+    margin: 0 auto 56px !important;
+    justify-content: center !important;
+  }
+
+  /* 最後の帯画像はそのままフル幅で下に続ける */
+  .astragogh-desktop .img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
 
