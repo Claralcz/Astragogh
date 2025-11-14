@@ -1168,4 +1168,29 @@ body { font-family: var(--font-body); line-height: 1.6; }
   }
 }
 
+@media (max-width: 650px) {
+  /* Oeuvreの画像すべてに右下バッジを重ねる */
+  .astragogh-desktop .image-3,
+  .astragogh-desktop .image-4,
+  .astragogh-desktop .image-5,
+  .astragogh-desktop .sans-titre-2,
+  .astragogh-desktop .image-6,
+  .astragogh-desktop .image-7 {
+    position: relative !important;
+  }
+  .astragogh-desktop .image-3::after,
+  .astragogh-desktop .image-4::after,
+  .astragogh-desktop .image-5::after,
+  .astragogh-desktop .sans-titre-2::after,
+  .astragogh-desktop .image-6::after,
+  .astragogh-desktop .image-7::after {
+    content: "" !important;
+    position: absolute !important;
+    right: 8px; bottom: 8px;
+    width: 32px; height: 32px;
+    background: url("Image/plane.png") center/contain no-repeat;
+    pointer-events: none;
+  }
+}
+
 
