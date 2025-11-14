@@ -395,3 +395,29 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 @media (max-width: 650px) {
   .site-footer__inner { min-height: 160px; }
 }
+
+/* ===== Footer: full-bleed band ===== */
+.site-footer{
+  background:#6fb3aa;
+  /* 画面幅いっぱいに広げる定番トリック */
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+
+  margin-top:48px;
+}
+.site-footer__inner{
+  max-width:var(--container-max, 1200px);
+  margin-inline:auto;
+  padding:28px 16px;
+  min-height:220px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.site-footer__social{
+  display:flex; gap:24px; align-items:center; justify-content:center;
+}
+.site-footer .social{ width:24px; height:24px; display:inline-flex; }
+.site-footer .social svg{ width:24px; height:24px; fill:#0c3b5e; }
+@media (max-width:650px){ .site-footer__inner{ min-height:160px; } }
