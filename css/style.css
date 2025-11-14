@@ -1,29 +1,29 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Cinzel:700|Libre+Baskerville:400|Inter:var(--small-text-font-weight)");
-* {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0px;
+/* style.css — 見た目の振る舞いに限定（Reset/Fontsや箱モデルはglobals.cssに集約） */
+
+/* なめらかな描画 */
+* { -webkit-font-smoothing: antialiased; }
+
+/* ページ基本寸法（既存どおり） */
+html, body {
+  margin: 0;
   height: 100%;
 }
-/* a blue color as a generic focus style */
+
+/* フォーカス可視化（アクセシビリティ） */
 button:focus-visible {
   outline: 2px solid #4a90e2 !important;
   outline: -webkit-focus-ring-color auto 5px !important;
 }
-a {
-  text-decoration: none;
-}
 
-.items .div:hover {
+/* リンクの装飾 */
+a { text-decoration: none; }
+
+/* ナビ項目：ホバー時の下線。レイアウトのズレ防止に通常時の透明ボーダーを付与 */
+.items .div {
   border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
-  cursor: pointer;
 }
-
 .items .div:hover {
   border-bottom: 2px solid #27408B;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
 }
