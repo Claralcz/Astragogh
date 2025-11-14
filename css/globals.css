@@ -1,6 +1,3 @@
-現在のglobals.cssを送ります。
-重複箇所や不必要な箇所を整理してください。
-
 /* --- responsive base (safe) --- */ 
 *,
 *::before,
@@ -694,3 +691,4 @@ body { font-family: var(--font-body); line-height: 1.6; }
   letter-spacing: 0;
   line-height: 24px;
 }
+
