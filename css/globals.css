@@ -421,3 +421,22 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .site-footer .social{ width:24px; height:24px; display:inline-flex; }
 .site-footer .social svg{ width:24px; height:24px; fill:#0c3b5e; }
 @media (max-width:650px){ .site-footer__inner{ min-height:160px; } }
+
+/* Contact直前の区切り画像（PC） */
+.astragogh-desktop .image-2--contact {
+  position: absolute;
+  left: 0;
+  top: 3891px;   /* Contact見出しの少し上に来る値に調整してください */
+  width: 1440px;
+  height: 211px;
+}
+
+/* モバイルは幅100%で自然に流し込み（任意） */
+@media (max-width: 650px){
+  .astragogh-desktop .image-2--contact{
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+}
