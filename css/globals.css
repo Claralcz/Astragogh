@@ -35,7 +35,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   overflow: hidden;
   width: 100%;
   min-width: 1440px;
-  min-height: 4811px;
+  min-height: 4600px;
   position: relative;
 }
 
@@ -440,5 +440,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: block !important;
   }
 }
+
 
 
