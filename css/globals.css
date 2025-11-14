@@ -228,7 +228,25 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .text-wrapper-6 { width: 515px; font-family: "Libre Baskerville", Georgia, serif; font-weight: 400; color: #000; font-size: 24px; line-height: 36px; }
 .astragogh-desktop .text-wrapper-7 { display: flex; align-items: center; justify-content: center; width: 515px; font-family: "Libre Baskerville", Georgia, serif; font-weight: 400; color: #828282; font-size: 24px; line-height: 36px; }
 
-.astragogh-desktop .section { position: absolute; top: 4075px; left: 0; width: 1440px; height: 236px; display: flex; justify-content: center; }
+.astragogh-desktop .section 
+{ position: absolute; top: 4075px; 
+ left: 0; width: 1440px; 
+ height: 236px; 
+ display: flex; 
+ justify-content: center; }
+
+.astragogh-desktop .section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -211px;                 /* Contact 見出しの"211px 上"に固定表示 */
+  width: 1440px;               /* 既存の区切り画像と同じ幅・高さ */
+  height: 211px;
+  background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/image-12.png")
+              center / cover no-repeat;
+  /* 必要なら重なり順を上げる */
+  z-index: 0;
+}
 .astragogh-desktop .text-wrapper-8 { margin-top: 89px; width: 625px; height: 65px; margin-left: -655px; font-family: "Cinzel", serif; font-weight: 700; color: #000; font-size: 48px; letter-spacing: -0.96px; }
 
 .astragogh-desktop .copy-4 { width: 844px; gap: 40px; top: 247px; left: 111px; display: flex; flex-direction: column; align-items: flex-start; position: absolute; }
@@ -440,6 +458,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: block !important;
   }
 }
+
 
 
 
