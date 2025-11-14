@@ -45,7 +45,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .navigation-footer {
   position: absolute;
   top: 21px;
-  left: 34px;
+  left: 33px;
   width: 173px;
   height: auto;
 }
@@ -458,6 +458,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: block !important;
   }
 }
+
 
 
 
