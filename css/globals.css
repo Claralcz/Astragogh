@@ -691,3 +691,40 @@ body { font-family: var(--font-body); line-height: 1.6; }
   letter-spacing: 0;
   line-height: 24px;
 }
+
+/* ===== Footer band（ページ最下部にだけ表示） ===== */
+.site-footer {
+  background: #6fb3aa;           /* 緑の帯の色：必要なら調整 */
+  margin-top: 48px;              /* Contactからの余白 */
+}
+.site-footer__inner {
+  max-width: var(--container-max, 1200px);
+  margin-inline: auto;
+  padding: 28px 16px;            /* 帯内の上下余白 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;             /* 帯の見た目の高さ（調整可） */
+}
+.site-footer__social {
+  display: flex;
+  gap: 24px;
+}
+
+.site-footer .social {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+}
+.site-footer .social svg {
+  width: 100%;
+  height: 100%;
+  fill: #0c3b5e;                 /* アイコン色。必要なら変更 */
+  transition: opacity .2s ease;
+}
+.site-footer .social:hover svg { opacity: .8; }
+
+/* モバイルで帯を少し低めに（任意） */
+@media (max-width: 650px) {
+  .site-footer__inner { min-height: 160px; }
+}
