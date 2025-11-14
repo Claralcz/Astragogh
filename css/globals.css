@@ -426,7 +426,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .image-2--contact {
   position: absolute;
   left: 0;
-  top: 4000px;   /* Contact見出しの少し上に来る値に調整してください */
+  top: 3300px;   /* Contact見出しの少し上に来る値に調整してください */
   width: 1440px;
   height: 211px;
 }
@@ -440,4 +440,5 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: block !important;
   }
 }
+
 
