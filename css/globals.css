@@ -46,7 +46,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   position: absolute;
   top: 21px;
   left: 32px;
-  width: 173px;
+  width: 174px;
   height: auto;
 }
 
@@ -458,6 +458,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: block !important;
   }
 }
+
 
 
 
