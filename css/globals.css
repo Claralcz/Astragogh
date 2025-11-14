@@ -1056,23 +1056,3 @@ body { font-family: var(--font-body); line-height: 1.6; }
   .astragogh-desktop .images-7 {
     display: none !important;
   }
-
-  /* 並び順（必要最小限） */
-  .astragogh-desktop { display: flex !important; flex-direction: column !important; }
-  .astragogh-desktop .navigation { order: 10; }
-  .astragogh-desktop .copy-4 { order: 20; }
-  .astragogh-desktop .image   { order: 30; }
-  .astragogh-desktop .text-wrapper-3 { order: 40; }
-  .astragogh-desktop .image-3 { order: 50; } .astragogh-desktop .copy   { order: 60; }
-  .astragogh-desktop .image-4 { order: 70; } .astragogh-desktop .copy-3 { order: 80; }
-  .astragogh-desktop .image-5 { order: 90; } .astragogh-desktop .copy-2 { order: 100; }
-  .astragogh-desktop .image-2 { order: 110; }
-  .astragogh-desktop .text-wrapper-5 { order: 120; }
-  .astragogh-desktop .text { order: 130; }
-  .astragogh-desktop .sans-titre { order: 140; }
-  .astragogh-desktop .section { order: 150; }
-  .astragogh-desktop .form { order: 160; }
-  .astragogh-desktop .input-2 { order: 170; }
-  .astragogh-desktop .button-2 { order: 180; }
-  .astragogh-desktop .img { order: 190; }
-}
