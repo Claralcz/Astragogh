@@ -353,3 +353,45 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   font-size: 16px;
   line-height: 24px;
 }
+
+/* ===== Footer band（ページ最下部に表示する緑帯） ===== */
+.site-footer {
+  background: #6fb3aa;                 /* 緑の帯 */
+  margin-top: 48px;
+}
+
+.site-footer__inner {
+  max-width: var(--container-max, 1200px);
+  margin-inline: auto;
+  padding: 28px 16px;
+  min-height: 220px;                    /* 帯の高さ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-footer__social {
+  display: flex !important;             /* 縦並び防止 */
+  flex-direction: row !important;
+  gap: 24px !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* アイコンのサイズを固定 */
+.site-footer .social { 
+  width: 24px !important; 
+  height: 24px !important; 
+  display: inline-flex !important; 
+}
+.site-footer .social svg {
+  width: 24px !important;
+  height: 24px !important;
+  fill: #0c3b5e;                        /* アイコン色 */
+  display: block !important;
+}
+
+/* モバイルは少し低めに（任意） */
+@media (max-width: 650px) {
+  .site-footer__inner { min-height: 160px; }
+}
