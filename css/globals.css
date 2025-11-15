@@ -32,6 +32,10 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   position: relative;
 }
 
+.plane-mobile {
+  display: none;
+}
+
 /* ▼ 旧：緑帯フッター画像用（bottom固定）
    HTMLではロゴに使われているため誤配置の原因。
    → “ロゴ表示”に用途を切り替えます。 */
@@ -514,31 +518,19 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: block;
   }
 
-  /* 紙飛行機アイコン（スマホ版では画像の右下に重ねる） */
-  .astragogh-desktop .image-3,
-  .astragogh-desktop .image-4,
-  .astragogh-desktop .image-5,
-  .astragogh-desktop .sans-titre-2,  /* La chambre à Arles */
-  .astragogh-desktop .image-6,
-  .astragogh-desktop .image-7 {
-    position: relative !important;
+    /* Oeuvres 画像ラッパー（スマホで紙飛行機を重ねるための土台） */
+  .oeuvre-img-wrapper {
+    position: relative;
   }
 
-  .astragogh-desktop .image-3::after,
-  .astragogh-desktop .image-4::after,
-  .astragogh-desktop .image-5::after,
-  .astragogh-desktop .sans-titre-2::after,
-  .astragogh-desktop .image-6::after,
-  .astragogh-desktop .image-7::after {
-    content: "";
+  .plane-mobile {
+    display: block;              /* デスクトップでは非表示、スマホで表示 */
     position: absolute;
     right: 8px;
     bottom: 8px;
     width: 40px;
     height: 40px;
-    background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/images-3.png")
-                center / contain no-repeat;
-    pointer-events: none;
+    pointer-events: none;        /* タップ操作を邪魔しない */
   }
 
   /* PC 用の飾り画像はスマホでは非表示 */
@@ -786,3 +778,4 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 
   /* PC 用に使っている .image-2--contact は削除済み */
 }
+
