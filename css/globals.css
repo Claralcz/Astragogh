@@ -519,8 +519,20 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   }
 
     /* Oeuvres 画像ラッパー（スマホで紙飛行機を重ねるための土台） */
+   /* Oeuvres 画像ラッパー（スマホで紙飛行機を重ねるための土台） */
   .oeuvre-img-wrapper {
     position: relative;
+    width: 100%;
+    max-width: 374px;   /* 画像と同じ幅にする */
+    margin: 16px auto 0;/* 画面中央に寄せる＋上の余白 */
+  }
+
+  /* ラッパー内の Oeuvres 画像はラッパーにピッタリ合わせる */
+  .oeuvre-img-wrapper img {
+    width: 100%;
+    height: auto;
+    margin: 0;          /* 画像側の margin: 16px auto 0; を打ち消す */
+    display: block;
   }
 
   .plane-mobile {
@@ -532,7 +544,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     height: 40px;
     pointer-events: none;        /* タップ操作を邪魔しない */
   }
-
   /* PC 用の飾り画像はスマホでは非表示 */
   .astragogh-desktop .au-quotidien {
     display: none;
@@ -778,4 +789,5 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 
   /* PC 用に使っている .image-2--contact は削除済み */
 }
+
 
