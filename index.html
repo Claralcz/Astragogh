@@ -20,6 +20,7 @@
   </head>
   <body>
     <div class="astragogh-desktop">
+      <!-- ロゴ＋ナビ -->
       <img class="navigation-footer" src="Image/Logo.png" alt="AstraGogh logo">
       <div class="navigation">
         <div class="text-wrapper">AstraGogh</div>
@@ -30,16 +31,27 @@
           <button class="button"><div class="text-wrapper-2">Contact</div></button>
         </div>
       </div>
-      
-    <div class="copy-4"> 
+
+      <!-- Astragogh のタイトル＋説明＋Contact ボタン（ここはひとまとまり） -->
+      <div class="copy-4"> 
         <div class="page-title">
           <div class="text-wrapper-9">Astragogh</div>
-          <p class="text-wrapper-10"> Nichée au coeur de l’iconique Quartier Latin, dans l’ombre de la Ville Lumière, Astragogh est une galerie d’art exclusivement à consacrée à Van Gogh, sa vie et son oeuvre. </p> 
+          <p class="text-wrapper-10">
+            Nichée au coeur de l’iconique Quartier Latin, dans l’ombre de la Ville Lumière,
+            Astragogh est une galerie d’art exclusivement à consacrée à Van Gogh, sa vie et son oeuvre.
+          </p> 
         </div> 
         <button class="div-wrapper">
-       <img class="image" src="Image/Nuit1.png" alt="Bandeau principal"> 
-          
-     <div class="text-wrapper-3">Oeuvres</div> 
+          <div class="text-wrapper-11">Contact</div>
+        </button> 
+      </div>
+
+      <!-- 夜空の横長画像（PCではトップ帯、スマホでは Astragogh ブロックの下に来る） -->
+      <img class="image" src="Image/Nuit1.png" alt="Bandeau principal"> 
+
+      <!-- ===== Oeuvres セクション ===== -->
+      <div class="text-wrapper-3">Oeuvres</div> 
+
       <!-- 1. Les tournesols -->
       <img class="image-3" src="https://c.animaapp.com/mgz5cglmPQrSKB/img/image-6.png" alt="Les tournesols">
       <div class="copy">
@@ -54,60 +66,73 @@
         <p class="p">Cette œuvre est un témoignage d’une lutte intérieure.</p>
       </div>
 
-       <!-- 3. Les Cyprès -->
+      <!-- 3. Les Cyprès -->
       <img class="image-5" src="https://c.animaapp.com/mgz5cglmPQrSKB/img/image-8.png" alt="Les Cyprès">
       <div class="copy-2">
         <div class="text-wrapper-4">Les Cyprès</div>
         <p class="p">Ils symbolisent la mort, mais leur vitalité picturale exprime aussi une énergie de vie.</p>
       </div>
 
-       <!-- 4. La chambre à Arles -->
+      <!-- 4. La chambre à Arles -->
       <img class="sans-titre-2" src="https://c.animaapp.com/mgz5cglmPQrSKB/img/sans-titre-1.png" alt="La chambre à Arles">
       <div class="copy-5">
         <div class="text-wrapper-4">La chambre à Arles</div>
         <p class="p">Ce tableau est un autoportrait en creux, un espace qui reflète son état d’esprit.</p>
       </div>
 
-       <!-- 5. Oliveraie -->
+      <!-- 5. Oliveraie -->
       <img class="image-6" src="https://c.animaapp.com/mgz5cglmPQrSKB/img/image-10.png" alt="Oliveraie">
       <div class="copy-7">
         <div class="text-wrapper-4">Oliveraie</div>
         <p class="p">Ces toiles expriment une communion spirituelle avec la nature.</p>
       </div>
 
-       <!-- 6. La nuit étoilée -->
+      <!-- 6. La nuit étoilée -->
       <img class="image-7" src="https://c.animaapp.com/mgz5cglmPQrSKB/img/image-11.png" alt="La nuit étoilée">
       <div class="copy-6">
         <div class="text-wrapper-4">La nuit étoilée</div>
         <p class="p">Cette toile a été peinte lors d’un évènement stellaire.</p>
       </div>
-      
-      
+
+      <!-- ===== Biographie セクション ===== -->
       <img class="sans-titre" src="Image/fleur.jpg" alt="Biographie visuel">
       <div class="text-wrapper-5">Biographie</div>
       <div class="text"> 
         <div class="text-2"> 
-        <div class="text-wrapper-6">Sa vie religieuse</div> 
-          <p class="text-wrapper-7"> D’abord tourné vers le protestantisme, Van Gogh étudie la théologie tout en devnant ptédicateur à Londres, puis évangélisateur au Borinage. </p> 
-        </div> <div class="text-2"> 
+          <div class="text-wrapper-6">Sa vie religieuse</div> 
+          <p class="text-wrapper-7">
+            D’abord tourné vers le protestantisme, Van Gogh étudie la théologie tout en devnant ptédicateur à Londres,
+            puis évangélisateur au Borinage.
+          </p> 
+        </div>
+        <div class="text-2"> 
           <div class="text-wrapper-6">Sa carrière artistique</div> 
-          <p class="text-wrapper-7"> Plus tard, il débute une carrière tournée vers la peinture et le dessin, composant plus de 2000 toiles, notamment lors de son internement dans le Sud de la France. </p> 
-        </div> <div class="text-2"> 
+          <p class="text-wrapper-7">
+            Plus tard, il débute une carrière tournée vers la peinture et le dessin, composant plus de 2000 toiles,
+            notamment lors de son internement dans le Sud de la France.
+          </p> 
+        </div>
+        <div class="text-2"> 
           <div class="text-wrapper-4">Sa légende</div> 
-          <p class="p"> Avec son tempérament agité, Van Gogh est resté dans la légende pour ses réalisations créées lors d’épisodes maladifs, et pour s’être coupé l’oreille dans un accès de folie. </p> 
+          <p class="p">
+            Avec son tempérament agité, Van Gogh est resté dans la légende pour ses réalisations créées lors d’épisodes
+            maladifs, et pour s’être coupé l’oreille dans un accès de folie.
+          </p> 
         </div>
       </div> 
+
+      <!-- ===== Contact 見出し（区切り帯は CSS の ::before で描画） ===== -->
       <div class="section">
-        <div class="text-wrapper-8">Contact</div></div>
-          <div class="text-wrapper-11">Contact</div>
-        </button> 
-      </div> 
+        <div class="text-wrapper-8">Contact</div>
+      </div>
+
+      <!-- Biographie 用の区切り画像（PC 用）-->
       <img class="image-2" src="https://c.animaapp.com/mgz5cglmPQrSKB/img/image-12.png" alt="Séparateur de section"> 
 
+      <!-- 飾り画像 -->
       <img class="au-quotidien" src="https://c.animaapp.com/mgz5cglmPQrSKB/img/au-quotidien-1.png" alt="Décor">
 
-      
-      <!-- 7つのアイコン（必要に応じて4つに絞る際は CSS 側で制御） -->
+      <!-- 紙飛行機アイコン（PC 用） -->
       <img class="images"   src="https://c.animaapp.com/mgz5cglmPQrSKB/img/images-3.png" alt="icon 1">
       <img class="images-2" src="https://c.animaapp.com/mgz5cglmPQrSKB/img/images-3.png" alt="icon 2">
       <img class="images-3" src="https://c.animaapp.com/mgz5cglmPQrSKB/img/images-3.png" alt="icon 3">
@@ -116,6 +141,7 @@
       <img class="images-6" src="https://c.animaapp.com/mgz5cglmPQrSKB/img/images-3.png" alt="icon 6">
       <img class="images-7" src="https://c.animaapp.com/mgz5cglmPQrSKB/img/images-3.png" alt="icon 7">
 
+      <!-- Contact フォーム -->
       <div class="form">
         <div class="input">
           <div class="text-wrapper-12">Adresse Mail</div>
@@ -124,13 +150,15 @@
       </div>
       <div class="input-2">
         <div class="text-wrapper-14">Your message</div>
-          <textarea class="field" placeholder="Enter your question or message" rows="5"></textarea>
+        <textarea class="field" placeholder="Enter your question or message" rows="5"></textarea>
       </div>
       <button class="button-2"><div class="text-wrapper-13">Envoyer</div></button>
-      </div>
-       <footer class="site-footer" aria-label="Pied de page">
-        <div class="site-footer__inner">
-          <nav class="site-footer__social" aria-label="Réseaux sociaux">
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer" aria-label="Pied de page">
+      <div class="site-footer__inner">
+        <nav class="site-footer__social" aria-label="Réseaux sociaux">
             <a class="social" href="#" aria-label="Facebook">
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.86h2.77l-.44 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>
@@ -152,6 +180,7 @@
       </footer>
   </body>
 </html>
+
 
 
 
