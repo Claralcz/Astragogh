@@ -455,6 +455,26 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
    ========================= */
 @media (max-width: 650px) {
 
+  /* 作品画像・大きめの画像類は必ず絶対配置を解除する */
+  .astragogh-desktop .image,
+  .astragogh-desktop .image-2,
+  .astragogh-desktop .image-3,
+  .astragogh-desktop .image-4,
+  .astragogh-desktop .image-5,
+  .astragogh-desktop .image-6,
+  .astragogh-desktop .image-7,
+  .astragogh-desktop .sans-titre,
+  .astragogh-desktop .sans-titre-2 {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 16px;
+  }
+
+@media (max-width: 650px) {
+
   /* ページ本体を「普通の縦長レイアウト」にする */
   .astragogh-desktop {
     min-width: 0;
@@ -702,5 +722,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   }
 
   /* フッターはそのままで OK（幅100vw の帯） */
-
+  }
 }
+
