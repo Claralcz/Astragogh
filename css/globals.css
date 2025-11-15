@@ -479,16 +479,49 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 0 auto 16px;
   }
 
-  /* Oeuvres の作品画像は少し余白をとって中央寄せ */
+  /* Oeuvres 6 枚 ＋ La chambre à Arles の画像サイズ */
   .astragogh-desktop .image-3,
   .astragogh-desktop .image-4,
   .astragogh-desktop .image-5,
   .astragogh-desktop .image-6,
   .astragogh-desktop .image-7,
   .astragogh-desktop .sans-titre-2 {
-    width: 80%;
+    margin: 16px auto 0;
+    width: 100%;        
+    max-width: 374px;    /* デスクトップのカード幅と同じくらいに制限 */
   }
 
+    /* 紙飛行機アイコン（スマホ版では画像の右下に重ねる） */
+
+  /* まず、アイコンを重ねる画像を relative にして「土台」にする */
+  .astragogh-desktop .image-3,
+  .astragogh-desktop .image-4,
+  .astragogh-desktop .image-5,
+  .astragogh-desktop .sans-titre-2,  /* La chambre à Arles */
+  .astragogh-desktop .image-6,
+  .astragogh-desktop .image-7 {
+    position: relative !important;
+  }
+
+  /* 各画像の右下に、同じ紙飛行機アイコンを表示 */
+  .astragogh-desktop .image-3::after,
+  .astragogh-desktop .image-4::after,
+  .astragogh-desktop .image-5::after,
+  .astragogh-desktop .sans-titre-2::after,
+  .astragogh-desktop .image-6::after,
+  .astragogh-desktop .image-7::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    width: 40px;
+    height: 40px;
+    background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/images-3.png")
+                center / contain no-repeat;
+    pointer-events: none;  /* クリックを邪魔しないように */
+  }
+
+  
   /* PC 用の飾り画像はスマホでは非表示 */
   .astragogh-desktop .au-quotidien {
     display: none;
@@ -568,6 +601,25 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     line-height: 1.5;
     text-align: left;
   }
+
+    /* ヒーロー部分の本文右下に紙飛行機を表示 */
+  .astragogh-desktop .text-wrapper-10 {
+    position: relative;        /* 擬似要素の土台にする */
+    padding-bottom: 40px;      /* アイコンぶんの下余白 */
+  }
+
+  .astragogh-desktop .text-wrapper-10::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    bottom: 4px;
+    width: 32px;
+    height: 32px;
+    background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/images-3.png")
+                center / contain no-repeat;
+    pointer-events: none;
+  }
+
 
   .astragogh-desktop .div-wrapper {
     align-self: center;
@@ -727,3 +779,4 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 0;
   }
 }
+
