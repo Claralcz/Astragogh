@@ -630,7 +630,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .text-wrapper-10 {
   font-size: 18px;
   line-height: 1.5;
-  text-align: right;      /* 説明文だけ右揃え */
+  text-align: left;      /* 説明文だけ左揃え */
   position: relative;
   padding-bottom: 40px;   /* 紙飛行機アイコン用の余白はそのまま */
 }
@@ -800,6 +800,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
+
 
 
 
