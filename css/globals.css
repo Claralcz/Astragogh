@@ -518,31 +518,36 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: block;
   }
 
-    /* Oeuvres 画像ラッパー（スマホで紙飛行機を重ねるための土台） */
    /* Oeuvres 画像ラッパー（スマホで紙飛行機を重ねるための土台） */
   .oeuvre-img-wrapper {
     position: relative;
     width: 100%;
-    max-width: 374px;   /* 画像と同じ幅にする */
-    margin: 16px auto 0;/* 画面中央に寄せる＋上の余白 */
+    max-width: 374px;         /* デスクトップのカード幅と合わせる */
+    margin: 16px auto 0;
+    aspect-ratio: 374 / 484;  /* 縦長の額縁比率で固定 */
+    overflow: hidden;         /* はみ出す部分はトリミング */
   }
 
   /* ラッパー内の Oeuvres 画像はラッパーにピッタリ合わせる */
-  .oeuvre-img-wrapper img {
+ /* ラッパー内の「最初の img」（作品の画像だけ）を枠いっぱいに表示 */
+  .oeuvre-img-wrapper img:first-child {
     width: 100%;
-    height: auto;
-    margin: 0;          /* 画像側の margin: 16px auto 0; を打ち消す */
+    height: 100%;
+    object-fit: cover;
     display: block;
   }
 
+ /* 紙飛行機アイコン（2枚目の img）は右下に重ねる */
   img.plane-mobile {
-    width: 32px !important;
-    height: 32px !important;
-    max-width: none !important;
-    rigth: 30px !important;
-    bottom: -4px !important;
+    display: block;
+    position: absolute;
+    right: 8px;              /* 画像右端からの余白 */
+    bottom: 8px;             /* 画像下端からの余白 */
+    width: 32px;             /* ヒーロー部分の紙飛行機と同じくらいのサイズ感 */
+    height: 32px;
+    max-width: none;
+    pointer-events: none;
   }
-
   /* PC 用の飾り画像はスマホでは非表示 */
   .astragogh-desktop .au-quotidien {
     display: none;
@@ -788,6 +793,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 
   /* PC 用に使っている .image-2--contact は削除済み */
 }
+
 
 
 
