@@ -535,15 +535,14 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: block;
   }
 
-  .plane-mobile {
-    display: block;              /* デスクトップでは非表示、スマホで表示 */
-    position: absolute;
-    right: 8px;
-    bottom: 8px;
-    width: 32px;                 /* ヒーローの紙飛行機と同じサイズ感に調整 */
-    height: 32px;
-    pointer-events: none;        /* タップ操作を邪魔しない */
+  img.plane-mobile {
+    width: 32px !important;
+    height: 32px !important;
+    max-width: none !important;
+    right: 4px;
+    bottom: 4px;
   }
+
   /* PC 用の飾り画像はスマホでは非表示 */
   .astragogh-desktop .au-quotidien {
     display: none;
@@ -789,6 +788,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 
   /* PC 用に使っている .image-2--contact は削除済み */
 }
+
 
 
 
