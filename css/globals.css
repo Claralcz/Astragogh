@@ -539,7 +539,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     width: 32px !important;
     height: 32px !important;
     max-width: none !important;
-    right: 4px;
+    left: 4px;
     bottom: 4px;
   }
 
@@ -788,6 +788,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 
   /* PC 用に使っている .image-2--contact は削除済み */
 }
+
 
 
 
