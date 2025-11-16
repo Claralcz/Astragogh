@@ -541,8 +541,8 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   img.plane-mobile {
     display: block;
     position: absolute;
-    right: 8px;              /* 画像右端からの余白 */
-    bottom: 8px;             /* 画像下端からの余白 */
+    right: 0px;              /* 画像右端からの余白 */
+    bottom: 0px;             /* 画像下端からの余白 */
     width: 32px;             /* ヒーロー部分の紙飛行機と同じくらいのサイズ感 */
     height: 32px;
     max-width: none;
@@ -793,6 +793,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 
   /* PC 用に使っている .image-2--contact は削除済み */
 }
+
 
 
 
