@@ -540,8 +540,8 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     position: absolute;
     right: 8px;
     bottom: 8px;
-    width: 40px;
-    height: 40px;
+    width: 32px;                 /* ヒーローの紙飛行機と同じサイズ感に調整 */
+    height: 32px;
     pointer-events: none;        /* タップ操作を邪魔しない */
   }
   /* PC 用の飾り画像はスマホでは非表示 */
@@ -789,5 +789,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 
   /* PC 用に使っている .image-2--contact は削除済み */
 }
+
 
 
