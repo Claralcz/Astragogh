@@ -408,6 +408,10 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   line-height: var(--small-text-line-height, 150%);
 }
 
+.astragogh-desktop textarea.field {
+  resize: none;
+}
+
 .astragogh-desktop .button-2 {
   all: unset;
   box-sizing: border-box;
@@ -840,6 +844,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
+
 
 
 
