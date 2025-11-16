@@ -620,7 +620,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 }
 
   .astragogh-desktop .text-wrapper-9 {
-  font-size: 32px;         /* 少し大きく */
+  font-size: 40px;         /* 少し大きく */
   text-align: center;
   width: 100%;
 }
@@ -663,7 +663,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     width: 100%;
     margin: 32px 0 16px;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
   }
 
   .astragogh-desktop .copy,
@@ -705,7 +705,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     position: static !important;
     width: 100%;
     height: auto;
-    margin: 32px 0 0;
+    margin: 40px 0 0;
   }
 
   /* 左の大きな人物画像 */
@@ -766,7 +766,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 0 0 24px;
     width: 100%;
     height: auto;
-    font-size: 32px;
+    font-size: 40px;
     text-align: center;
   }
 
@@ -794,6 +794,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
+
 
 
 
