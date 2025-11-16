@@ -583,13 +583,18 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 }
 
   .astragogh-desktop .items {
-  margin: 0;
-  width: 100%;
+  /* ナビメニュー行全体を、ロゴの真下〜右端まで広げるための調整 */
+  width: calc(100% + 80px);  /* 左に 80px はみ出させる */
+  margin-left: -80px;        /* padding-left:96px のぶんを打ち消してロゴの下まで伸ばす */
+
+  margin-top: 8px;
   height: auto;
-  justify-content: space-between; /* 横幅いっぱいに均等配置 */
+  display: flex;
+  justify-content: space-between; /* 均等配置 */
   gap: 8px;
   flex-wrap: wrap;
 }
+
 
   .astragogh-desktop .div {
     font-size: 16px;
@@ -625,10 +630,11 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .text-wrapper-10 {
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;       /* 説明文も中央揃え */
+  text-align: right;      /* 説明文だけ右揃え */
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 40px;   /* 紙飛行機アイコン用の余白はそのまま */
 }
+
 
   /* ヒーロー部分の本文右下に紙飛行機を表示 */
   .astragogh-desktop .text-wrapper-10::after {
@@ -664,15 +670,17 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   }
 
   .astragogh-desktop .copy,
-  .astragogh-desktop .copy-2,
-  .astragogh-desktop .copy-3,
-  .astragogh-desktop .copy-5,
-  .astragogh-desktop .copy-6,
-  .astragogh-desktop .copy-7 {
-    position: static;
-    width: auto;
-    margin: 8px 16px 24px;
-  }
+.astragogh-desktop .copy-2,
+.astragogh-desktop .copy-3,
+.astragogh-desktop .copy-5,
+.astragogh-desktop .copy-6,
+.astragogh-desktop .copy-7 {
+  position: static;
+  width: 100%;
+  max-width: 374px;        /* 画像と同じ最大幅 */
+  margin: 8px auto 24px;   /* 中央寄せ（画像と同じセンター位置） */
+}
+
 
   .astragogh-desktop .text-wrapper-4 {
     font-size: 20px;
@@ -721,11 +729,12 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   }
 
   .astragogh-desktop .text {
-    position: static;
-    width: auto;
-    margin: 0 16px 32px;
-    align-items: flex-start;
-  }
+  position: static;
+  width: 80%;           /* .sans-titre と同じ幅（80%） */
+  margin: 0 auto 32px;  /* 画像と同じように中央寄せ */
+  align-items: flex-start;
+}
+
 
   .astragogh-desktop .text-wrapper-6 {
     width: auto;
@@ -791,6 +800,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
+
 
 
 
