@@ -36,9 +36,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   display: none;
 }
 
-/* ▼ 旧：緑帯フッター画像用（bottom固定）
-   HTMLではロゴに使われているため誤配置の原因。
-   → “ロゴ表示”に用途を切り替えます。 */
 .astragogh-desktop .navigation-footer {
   position: absolute;
   top: 21px;
@@ -794,6 +791,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
+
 
 
 
