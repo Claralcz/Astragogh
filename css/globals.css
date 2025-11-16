@@ -181,10 +181,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .image-4 { position: absolute; top: 1397px; left: 539px; width: 374px; height: 484px; }
 .astragogh-desktop .image-5 { position: absolute; top: 1397px; left: 961px; width: 374px; height: 484px; }
 
-/* ▼ 不要：緑帯画像（.img）
-   今後は画像ではなくCSSの色帯で実装するため削除。 */
-/* （意図して空にしています） */
-
 .astragogh-desktop .copy-5,
 .astragogh-desktop .copy-6,
 .astragogh-desktop .copy-7 {
@@ -214,12 +210,56 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .images-7 { position: absolute; top: 1822px; left: calc(50% + 556px); width: 59px; height: 59px; object-fit: cover; }
 
 /* セクション・フォーム */
-.astragogh-desktop .text-wrapper-5 { position: absolute; top: 3046px; left: 62px; width: 624px; font-family: "Cinzel", serif; font-weight: 700; color: #000; font-size: 48px; letter-spacing: -0.96px; }
-.astragogh-desktop .text { display: flex; flex-direction: column; width: 516px; align-items: flex-end; gap: 48px; position: absolute; top: 3133px; left: 62px; }
-.astragogh-desktop .text-2 { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 8px; position: relative; align-self: stretch; width: 100%; }
+.astragogh-desktop .text-wrapper-5 { 
+  position: absolute; 
+  top: 3046px; 
+  left: 62px; 
+  width: 624px; 
+  font-family: "Cinzel", serif; 
+  font-weight: 700; 
+  color: #000; 
+  font-size: 48px; 
+  letter-spacing: -0.96px; }
+.astragogh-desktop .text { 
+  display: flex; 
+  flex-direction: column; 
+  width: 516px; 
+  align-items: flex-end; 
+  gap: 48px; 
+  position: absolute; 
+  top: 3133px; 
+  left: 62px; 
+}
+.astragogh-desktop .text-2 { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  justify-content: center; 
+  gap: 8px; 
+  position: relative; 
+  align-self: stretch; 
+  width: 100%; 
+}
 
-.astragogh-desktop .text-wrapper-6 { width: 515px; font-family: "Libre Baskerville", Georgia, serif; font-weight: 400; color: #000; font-size: 24px; line-height: 36px; }
-.astragogh-desktop .text-wrapper-7 { display: flex; align-items: center; justify-content: center; width: 515px; font-family: "Libre Baskerville", Georgia, serif; font-weight: 400; color: #828282; font-size: 24px; line-height: 36px; }
+.astragogh-desktop .text-wrapper-6 { 
+  width: 515px; 
+  font-family: "Libre Baskerville", Georgia, serif; 
+  font-weight: 400; 
+  color: #000; 
+  font-size: 24px; 
+  line-height: 36px; 
+}
+.astragogh-desktop .text-wrapper-7 { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 515px; 
+  font-family: "Libre Baskerville", Georgia, serif; 
+  font-weight: 400; 
+  color: #828282; 
+  font-size: 24px; 
+  line-height: 36px; 
+}
 
 .astragogh-desktop .section {
   position: absolute;
@@ -340,7 +380,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   align-items: flex-start;
   gap: 8px;
   position: relative;
-  box-shadow: 0px 4px 4px #00000040;
+  box-shadow: none;
 }
 
 .astragogh-desktop .text-wrapper-12 {
@@ -408,7 +448,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   position: absolute;
   top: 4328px;
   left: 379px;
-  box-shadow: 0px 4px 4px #00000040;
+  box-shadow: none;
 }
 
 .astragogh-desktop .text-wrapper-14 {
@@ -800,6 +840,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
+
 
 
 
