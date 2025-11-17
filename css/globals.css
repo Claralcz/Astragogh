@@ -31,9 +31,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   position: relative;
 }
 
-.plane-mobile {
-  display: none;
-}
 
 .astragogh-desktop .navigation-footer {
   position: absolute;
@@ -198,9 +195,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .au-quotidien { position: absolute; top: 21px;  left: 32px;  width: 173px; height: 179px; }
 .astragogh-desktop .sans-titre   { position: absolute; top: 3067px; left: 726px; width: 635px; height: 748px; }
 .astragogh-desktop .sans-titre-2 { position: absolute; top: 2069px; left: 118px; width: 374px; height: 484px; }
-
-/* Icônes d’avion en papier (desktop) */
-.astragogh-desktop .images-7 { position: absolute; top: 1822px; left: calc(50% + 556px); width: 59px; height: 59px; object-fit: cover; }
 
 /* Section biographie et formulaire */
 .astragogh-desktop .text-wrapper-5 { 
@@ -570,18 +564,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: block;
   }
 
-  /* Icône avion pour mobile */
-  img.plane-mobile {
-    display: block;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    width: 32px;
-    height: 32px;
-    max-width: none;
-    pointer-events: none;
-  }
-
   /* Image décorative desktop masquée sur mobile */
   .astragogh-desktop .au-quotidien {
     display: none;
@@ -825,4 +807,5 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
+
 
