@@ -200,12 +200,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .sans-titre-2 { position: absolute; top: 2069px; left: 118px; width: 374px; height: 484px; }
 
 /* Icônes d’avion en papier (desktop) */
-.astragogh-desktop .images   { position: absolute; top: 1822px; left: calc(50% - 287px); width: 59px; height: 59px; object-fit: cover; }
-.astragogh-desktop .images-2 { position: absolute; top: 414px;  left: calc(50% + 235px); width: 59px; height: 59px; object-fit: cover; }
-.astragogh-desktop .images-3 { position: absolute; top: 2494px; left: calc(50% + 550px); width: 59px; height: 59px; object-fit: cover; }
-.astragogh-desktop .images-4 { position: absolute; top: 2494px; left: calc(50% + 128px); width: 59px; height: 59px; object-fit: cover; }
-.astragogh-desktop .images-5 { position: absolute; top: 2494px; left: calc(50% - 287px); width: 59px; height: 59px; object-fit: cover; }
-.astragogh-desktop .images-6 { position: absolute; top: 1822px; left: calc(50% + 135px); width: 59px; height: 59px; object-fit: cover; }
 .astragogh-desktop .images-7 { position: absolute; top: 1822px; left: calc(50% + 556px); width: 59px; height: 59px; object-fit: cover; }
 
 /* Section biographie et formulaire */
@@ -273,7 +267,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 
 /* Bandeau décoratif avant Contact (pseudo-élément) */
 .astragogh-desktop .section::before {
-  content: "";
+  content: "Tableau La Nuit Etoilée";
   position: absolute;
   left: 0;
   top: -211px;
@@ -328,7 +322,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .text-wrapper-10 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-family: "Libre Baskerville", Georgia, serif;
   font-weight: 400;
   color: #000000bf;
@@ -831,3 +825,4 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
+
