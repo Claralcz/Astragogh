@@ -1,4 +1,4 @@
-/* --- responsive base (safe) --- */
+/* Base responsive */
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -9,7 +9,7 @@ img, video { max-width: 100%; height: auto; display: block; }
 
 iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }
 
-/* フォントは styleguide.css の変数に委譲 */
+/* Police principale (définie via styleguide.css) */
 body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial); line-height: 1.6; }
 
 .container {
@@ -19,8 +19,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 }
 
 /* =========================
-   AstraGogh desktop (PC想定)
-   ※ 既存の絶対配置レイアウトは維持
+   Mise en page desktop AstraGogh
    ========================= */
 
 .astragogh-desktop {
@@ -44,7 +43,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   height: auto;
 }
 
-/* ナビ */
+/* Navigation principale */
 .astragogh-desktop .navigation {
   position: absolute;
   width: calc(100% - 174px);
@@ -138,7 +137,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   letter-spacing: -0.96px;
 }
 
-/* 作品テキスト */
+/* Texte des œuvres */
 .astragogh-desktop .copy,
 .astragogh-desktop .copy-2,
 .astragogh-desktop .copy-3 {
@@ -174,7 +173,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   line-height: 36px;
 }
 
-/* 画像群 */
+/* Images principales des œuvres et biographie */
 .astragogh-desktop .image   { position: absolute; top: 637px;  left: 0; width: 1440px; height: 598px; }
 .astragogh-desktop .image-2 { position: absolute; top: 2769px; left: 0; width: 1440px; height: 211px; }
 .astragogh-desktop .image-3 { position: absolute; top: 1397px; left: 118px; width: 374px; height: 484px; }
@@ -200,7 +199,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .sans-titre   { position: absolute; top: 3067px; left: 726px; width: 635px; height: 748px; }
 .astragogh-desktop .sans-titre-2 { position: absolute; top: 2069px; left: 118px; width: 374px; height: 484px; }
 
-/* 紙飛行機系アイコン（作品用） */
+/* Icônes d’avion en papier (desktop) */
 .astragogh-desktop .images   { position: absolute; top: 1822px; left: calc(50% - 287px); width: 59px; height: 59px; object-fit: cover; }
 .astragogh-desktop .images-2 { position: absolute; top: 414px;  left: calc(50% + 235px); width: 59px; height: 59px; object-fit: cover; }
 .astragogh-desktop .images-3 { position: absolute; top: 2494px; left: calc(50% + 550px); width: 59px; height: 59px; object-fit: cover; }
@@ -209,7 +208,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
 .astragogh-desktop .images-6 { position: absolute; top: 1822px; left: calc(50% + 135px); width: 59px; height: 59px; object-fit: cover; }
 .astragogh-desktop .images-7 { position: absolute; top: 1822px; left: calc(50% + 556px); width: 59px; height: 59px; object-fit: cover; }
 
-/* セクション・フォーム */
+/* Section biographie et formulaire */
 .astragogh-desktop .text-wrapper-5 { 
   position: absolute; 
   top: 3046px; 
@@ -261,6 +260,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   line-height: 36px; 
 }
 
+/* Section Contact desktop */
 .astragogh-desktop .section {
   position: absolute;
   top: 4075px;
@@ -271,12 +271,13 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   justify-content: center;
 }
 
+/* Bandeau décoratif avant Contact (pseudo-élément) */
 .astragogh-desktop .section::before {
   content: "";
   position: absolute;
   left: 0;
-  top: -211px;                 /* Contact 見出しの"211px 上"に固定表示 */
-  width: 1440px;               /* 既存の区切り画像と同じ幅・高さ */
+  top: -211px;
+  width: 1440px;
   height: 211px;
   background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/image-12.png")
               center / cover no-repeat;
@@ -463,7 +464,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   line-height: 24px;
 }
 
-/* ===== Footer: full-bleed band ===== */
+/* ===== Footer : bandeau pleine largeur ===== */
 .site-footer {
   background:#6fb3aa;
   width:100vw;
@@ -489,7 +490,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   justify-content:center;
 }
 
-/* アイコンのサイズを固定 */
+/* Icônes sociales : taille fixe */
 .site-footer .social{
   width:24px;
   height:24px;
@@ -502,22 +503,21 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   fill:#0c3b5e;
 }
 
-/* モバイルは少し低めに（任意） */
 @media (max-width:680px){
   .site-footer__inner{ min-height:160px; }
 }
 
 /* =========================
-   650px 以下：スマホレイアウト
+   Layout mobile (≤ 650px)
    ========================= */
 @media (max-width: 650px) {
 
-  /* ベース文字サイズ */
+  /* Typographie mobile */
   h1 { font-size: 24px; line-height: 1.25; }
   h2 { font-size: 20px; line-height: 1.3; }
   body, p, li { font-size: 16px; }
 
-  /* ページ全体を縦長レイアウトに戻す */
+  /* Conteneur principal en colonne */
   .astragogh-desktop {
     min-width: 0;
     width: 100%;
@@ -526,7 +526,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     position: relative;
   }
 
-  /* まず画像の絶対配置を解除する */
+  /* Réinitialisation des positions absolues des images */
   .astragogh-desktop .image,
   .astragogh-desktop .image-2,
   .astragogh-desktop .image-3,
@@ -544,7 +544,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 0 auto 16px;
   }
 
-  /* Oeuvres 6 枚 ＋ La chambre à Arles の画像サイズ（全て同じ「縦長の額縁」に揃える） */
+  /* Cartes des œuvres (ratio fixe) */
   .astragogh-desktop .image-3,
   .astragogh-desktop .image-4,
   .astragogh-desktop .image-5,
@@ -559,18 +559,16 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: block;
   }
 
-   /* Oeuvres 画像ラッパー（スマホで紙飛行機を重ねるための土台） */
+  /* Wrapper des images d’œuvres (pour l’icône avion) */
   .oeuvre-img-wrapper {
     position: relative;
     width: 100%;
-    max-width: 374px;         /* デスクトップのカード幅と合わせる */
+    max-width: 374px;
     margin: 16px auto 0;
-    aspect-ratio: 374 / 484;  /* 縦長の額縁比率で固定 */
-    overflow: hidden;         /* はみ出す部分はトリミング */
+    aspect-ratio: 374 / 484;
+    overflow: hidden;
   }
 
-  /* ラッパー内の Oeuvres 画像はラッパーにピッタリ合わせる */
- /* ラッパー内の「最初の img」（作品の画像だけ）を枠いっぱいに表示 */
   .oeuvre-img-wrapper img:first-child {
     width: 100%;
     height: 100%;
@@ -578,67 +576,65 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: block;
   }
 
- /* 紙飛行機アイコン（2枚目の img）は右下に重ねる */
+  /* Icône avion pour mobile */
   img.plane-mobile {
     display: block;
     position: absolute;
-    right: 0px;              /* 画像右端からの余白 */
-    bottom: 0px;             /* 画像下端からの余白 */
-    width: 32px;             /* ヒーロー部分の紙飛行機と同じくらいのサイズ感 */
+    right: 0px;
+    bottom: 0px;
+    width: 32px;
     height: 32px;
     max-width: none;
     pointer-events: none;
   }
-  /* PC 用の飾り画像はスマホでは非表示 */
+
+  /* Image décorative desktop masquée sur mobile */
   .astragogh-desktop .au-quotidien {
     display: none;
   }
 
-  /* ------------- ヘッダー ------------- */
+  /* ----- En-tête mobile ----- */
   .astragogh-desktop .navigation-footer {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  margin: 0;
-  object-fit: cover;
-}
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: 0;
+    object-fit: cover;
+  }
 
   .astragogh-desktop .navigation {
-  position: static;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 16px 16px 16px 96px; /* 左側にロゴ分のスペースを確保 */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #ffffff;
-}
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 16px 16px 16px 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+  }
 
   .astragogh-desktop .text-wrapper {
-  margin: 0 0 8px 0;
-  width: auto;
-  height: auto;
-  font-size: 28px;
-  line-height: 1.3;
-}
+    margin: 0 0 8px 0;
+    width: auto;
+    height: auto;
+    font-size: 28px;
+    line-height: 1.3;
+  }
 
   .astragogh-desktop .items {
-  /* ナビメニュー行全体を、ロゴの真下〜右端まで広げるための調整 */
-  width: calc(100% + 80px);  /* 左に 80px はみ出させる */
-  margin-left: -80px;        /* padding-left:96px のぶんを打ち消してロゴの下まで伸ばす */
-
-  margin-top: 8px;
-  height: auto;
-  display: flex;
-  justify-content: space-between; /* 均等配置 */
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
+    width: calc(100% + 80px);
+    margin-left: -80px;
+    margin-top: 8px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 
   .astragogh-desktop .div {
     font-size: 16px;
@@ -653,7 +649,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     font-size: 14px;
   }
 
-  /* ------------- ヒーロー（ASTRAGOGH の説明） ------------- */
+  /* ----- Bloc héros (titre + intro) ----- */
   .astragogh-desktop .copy-4 {
     position: static;
     width: auto;
@@ -662,25 +658,24 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   }
 
   .astragogh-desktop .page-title {
-  align-items: center;
-}
+    align-items: center;
+  }
 
   .astragogh-desktop .text-wrapper-9 {
-  font-size: 40px;         /* 少し大きく */
-  text-align: center;
-  width: 100%;
-}
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+  }
 
-.astragogh-desktop .text-wrapper-10 {
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: left;      /* 説明文だけ左揃え */
-  position: relative;
-  padding-bottom: 40px;   /* 紙飛行機アイコン用の余白はそのまま */
-}
+  .astragogh-desktop .text-wrapper-10 {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    position: relative;
+    padding-bottom: 40px;
+  }
 
-
-  /* ヒーロー部分の本文右下に紙飛行機を表示 */
+  /* Icône avion dans le texte d’intro */
   .astragogh-desktop .text-wrapper-10::after {
     content: "";
     position: absolute;
@@ -698,13 +693,12 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin-top: 16px;
   }
 
-  /* トップの横長の Nuit étoilée 画像 */
   .astragogh-desktop .image {
     width: 100%;
     margin: 24px 0 0;
   }
 
-  /* ------------- Oeuvres ------------- */
+  /* ----- Section Oeuvres mobile ----- */
   .astragogh-desktop .text-wrapper-3 {
     position: static;
     width: 100%;
@@ -714,17 +708,16 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   }
 
   .astragogh-desktop .copy,
-.astragogh-desktop .copy-2,
-.astragogh-desktop .copy-3,
-.astragogh-desktop .copy-5,
-.astragogh-desktop .copy-6,
-.astragogh-desktop .copy-7 {
-  position: static;
-  width: 100%;
-  max-width: 374px;        /* 画像と同じ最大幅 */
-  margin: 8px auto 24px;   /* 中央寄せ（画像と同じセンター位置） */
-}
-
+  .astragogh-desktop .copy-2,
+  .astragogh-desktop .copy-3,
+  .astragogh-desktop .copy-5,
+  .astragogh-desktop .copy-6,
+  .astragogh-desktop .copy-7 {
+    position: static;
+    width: 100%;
+    max-width: 374px;
+    margin: 8px auto 24px;
+  }
 
   .astragogh-desktop .text-wrapper-4 {
     font-size: 20px;
@@ -736,7 +729,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     justify-content: flex-start;
   }
 
-  /* 紙飛行機アイコン（PC用 img タグ）はスマホでは非表示 */
   .astragogh-desktop .images,
   .astragogh-desktop .images-2,
   .astragogh-desktop .images-3,
@@ -747,9 +739,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     display: none;
   }
 
-  /* ------------- Biographie ------------- */
-
-  /* Biographie の上の帯画像（.image-2） */
+  /* ----- Biographie mobile ----- */
   .astragogh-desktop .image-2 {
     position: static !important;
     width: 100%;
@@ -757,7 +747,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 40px 0 0;
   }
 
-  /* 左の大きな人物画像 */
   .astragogh-desktop .sans-titre {
     position: static !important;
     width: 80%;
@@ -773,12 +762,11 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   }
 
   .astragogh-desktop .text {
-  position: static;
-  width: 80%;           /* .sans-titre と同じ幅（80%） */
-  margin: 0 auto 32px;  /* 画像と同じように中央寄せ */
-  align-items: flex-start;
-}
-
+    position: static;
+    width: 80%;
+    margin: 0 auto 32px;
+    align-items: flex-start;
+  }
 
   .astragogh-desktop .text-wrapper-6 {
     width: auto;
@@ -791,7 +779,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     justify-content: flex-start;
   }
 
-  /* ------------- Contact セクション ------------- */
+  /* ----- Contact mobile ----- */
   .astragogh-desktop .section {
     position: static;
     width: 100%;
@@ -801,7 +789,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     text-align: center;
   }
 
-  /* Contact の上の区切り帯を擬似要素で描画 */
+  /* Bandeau séparateur avant Contact (mobile) */
   .astragogh-desktop .section::before {
     content: "";
     display: block;
@@ -820,7 +808,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     text-align: center;
   }
 
-  /* Contact フォーム */
   .astragogh-desktop .form {
     position: static;
     width: auto;
@@ -844,13 +831,3 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
