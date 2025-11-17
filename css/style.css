@@ -1,5 +1,3 @@
-/* style.css — styles de mise en forme (reset, polices et box model dans globals.css) */
-
 /* Lissage du rendu du texte */
 * { -webkit-font-smoothing: antialiased; }
 
@@ -11,8 +9,8 @@ html, body {
 
 /* Focus visible pour l’accessibilité */
 button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
+  outline: 2px solid #4a90e2 ;
+  outline: -webkit-focus-ring-color auto 5px ;
 }
 
 /* Style de base des liens */
@@ -27,3 +25,5 @@ a { text-decoration: none; }
   transition: border-color 0.3s ease;
   cursor: pointer;
 }
+
+
