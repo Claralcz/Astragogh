@@ -26,47 +26,7 @@ a { text-decoration: none; }
   cursor: pointer;
 }
 
-/* ===== MENU BURGER - responsive ===== */
 
-#menu-toggle {
-  display: none;
-}
 
-/* Icône burger */
-.menu-btn {
-  font-size: 32px;
-  cursor: pointer;
-  display: none; /* caché en desktop */
-  user-select: none;
-}
-
-/* Menu normal sur desktop */
-.items {
-  display: flex;
-  gap: 20px;
-}
-
-/* ----- VERSION MOBILE ----- */
-@media (max-width: 768px) {
-
-  /* On montre l'icône burger */
-  .menu-btn {
-    display: block;
-  }
-
-  /* On cache le menu par défaut */
-  .items {
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    background: white;
-    padding: 15px;
-  }
-
-  /* Quand on clique sur le burger (checkbox cochée) */
-  #menu-toggle:checked ~ .items {
-    display: flex;
-  }
-}
 
 
