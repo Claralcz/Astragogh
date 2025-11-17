@@ -1,24 +1,24 @@
-/* style.css — 見た目の振る舞いに限定（Reset/Fontsや箱モデルはglobals.cssに集約） */
+/* style.css — styles de mise en forme (reset, polices et box model dans globals.css) */
 
-/* なめらかな描画 */
+/* Lissage du rendu du texte */
 * { -webkit-font-smoothing: antialiased; }
 
-/* ページ基本寸法（既存どおり） */
+/* Dimensions de base de la page */
 html, body {
   margin: 0;
   height: 100%;
 }
 
-/* フォーカス可視化（アクセシビリティ） */
+/* Focus visible pour l’accessibilité */
 button:focus-visible {
   outline: 2px solid #4a90e2 !important;
   outline: -webkit-focus-ring-color auto 5px !important;
 }
 
-/* リンクの装飾 */
+/* Style de base des liens */
 a { text-decoration: none; }
 
-/* ナビ項目：ホバー時の下線。レイアウトのズレ防止に通常時の透明ボーダーを付与 */
+/* Navigation : soulignement au survol sans décaler la mise en page */
 .items .div {
   border-bottom: 2px solid transparent;
 }
