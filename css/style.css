@@ -14,45 +14,6 @@ button:focus-visible {
 
 a { text-decoration: none; }
 
-/* Navigation: soulignement au survol sans décaler la mise en page */
-.items .div {
-  border-bottom: 2px solid transparent;
-}
-.items .div:hover {
-  border-bottom: 2px solid #27408B;
-  transition: border-color 0.3s ease;
-  cursor: pointer;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Animation pour tous les boutons Contact */
-.button, 
-.div-wrapper {
-  display: inline-block;
-  transition: 
-    transform 0.25s ease,
-    background-color 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-/* Effets au survol */
-.button:hover,
-.div-wrapper:hover {
-  transform: scale(1.07);              /* Grossit légèrement */
-  background-color: #27408B;           /* Change la couleur de fond */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);   /* Petit effet lumineux */
-  cursor: pointer;
-}
-
-/* Pour souligner seulement le texte */
-.button:hover .text-wrapper-2,
-.div-wrapper:hover .text-wrapper-11 {
-  text-decoration: underline;
-}
-
 
 
 
