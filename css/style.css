@@ -3,7 +3,7 @@
 
 /* Dimensions de base de la page */
 html, body {
-  margin top: 0;
+  margin: 0;
   height: 100;
 }
 
@@ -30,6 +30,7 @@ a { text-decoration: none; }
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
