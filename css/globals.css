@@ -1,809 +1,810 @@
 /* Base responsive */
-*,
-*::before,
-*::after { box-sizing: border-box; }
-
-html { -webkit-text-size-adjust: 100%; }
-
-img, video { max-width: 100%; height: auto; display: block; }
-
-iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }
-
-/* Police principale (définie via styleguide.css) */
-body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial); line-height: 1.6; }
-
-.container {
-  max-width: var(--container-max, 1200px);
-  margin-inline: auto;
-  padding-inline: var(--container-pad, 16px);
-}
-
-/* =========================
-   Mise en page desktop AstraGogh
-   ========================= */
-
-.astragogh-desktop {
-  background-color: #ffffff;
-  overflow: hidden;
-  width: 100%;
-  min-width: 1440px;
-  min-height: 4600px;
-  position: relative;
-}
-
-
-.astragogh-desktop .navigation-footer {
-  position: absolute;
-  top: 21px;
-  left: 33px;
-  width: 172px;
-  height: auto;
-}
-
-/* Navigation principale */
-.astragogh-desktop .navigation {
-  position: absolute;
-  width: calc(100% - 174px);
-  top: 23px;
-  left: 191px;
-  height: 164px;
-  display: flex;
-  justify-content: space-between;
-  background-color: #ffffff;
-}
-
-.astragogh-desktop .text-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 62px;
-  width: 263px;
-  height: 41px;
-  margin-left: 56px;
-  font-family: "Cinzel", Helvetica, serif;
-  font-weight: 700;
-  color: #000;
-  font-size: 40px;
-  line-height: 60px;
-  white-space: nowrap;
-}
-
-.astragogh-desktop .items {
-  display: inline-flex;
-  margin-top: 56px;
-  width: 531px;
-  height: 52px;
-  position: relative;
-  margin-right: 80px;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 48px;
-}
-
-.astragogh-desktop .div {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-weight: 400;
-  color: #000;
-  font-size: 20px;
-  line-height: 30px;
-  white-space: nowrap;
-}
-
-.astragogh-desktop .button {
-  all: unset;
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 14px 24px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: #284d80;
-  border-radius: 8px;
-  box-shadow: var(--button-shadow);
-}
-
-.astragogh-desktop .text-wrapper-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-weight: 400;
-  color: #fff;
-  font-size: 16px;
-  line-height: 24px;
-  white-space: nowrap;
-}
-
-.astragogh-desktop .text-wrapper-3 {
-  position: absolute;
-  top: 1301px;
-  left: calc(50% - 647px);
-  width: 624px;
-  font-family: "Cinzel", serif;
-  font-weight: 700;
-  color: #000;
-  font-size: 48px;
-  letter-spacing: -0.96px;
-}
-
-/* Texte des œuvres */
-.astragogh-desktop .copy,
-.astragogh-desktop .copy-2,
-.astragogh-desktop .copy-3 {
-  display: flex;
-  flex-direction: column;
-  width: 381px;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 4px;
-  position: absolute;
-}
-.astragogh-desktop .copy   { top: 1903px; left: 118px; }
-.astragogh-desktop .copy-3 { top: 1903px; left: 546px; }
-.astragogh-desktop .copy-2 { top: 1903px; left: 961px; }
-
-.astragogh-desktop .text-wrapper-4 {
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-weight: 400;
-  color: #000;
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.astragogh-desktop .p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-weight: 400;
-  color: #828282;
-  font-size: 24px;
-  line-height: 36px;
-}
-
-/* Images principales des œuvres et biographie */
-.astragogh-desktop .image   { position: absolute; top: 637px;  left: 0; width: 1440px; height: 598px; }
-.astragogh-desktop .image-2 { position: absolute; top: 2769px; left: 0; width: 1440px; height: 211px; }
-.astragogh-desktop .image-3 { position: absolute; top: 1397px; left: 118px; width: 374px; height: 484px; }
-.astragogh-desktop .image-4 { position: absolute; top: 1397px; left: 539px; width: 374px; height: 484px; }
-.astragogh-desktop .image-5 { position: absolute; top: 1397px; left: 961px; width: 374px; height: 484px; }
-
-.astragogh-desktop .copy-5,
-.astragogh-desktop .copy-6,
-.astragogh-desktop .copy-7 {
-  width: 381px;
-  justify-content: center;
-  gap: 4px;
-  position: absolute;
-}
-.astragogh-desktop .copy-5 { top: 2587px; left: 117px; }
-.astragogh-desktop .copy-7 { top: 2587px; left: 539px; }
-.astragogh-desktop .copy-6 { top: 2587px; left: 954px; }
-
-.astragogh-desktop .image-6 { position: absolute; top: 2069px; left: 532px; width: 374px; height: 484px; object-fit: cover; }
-.astragogh-desktop .image-7 { position: absolute; top: 2069px; left: 954px; width: 374px; height: 484px; object-fit: cover; }
-
-.astragogh-desktop .au-quotidien { position: absolute; top: 21px;  left: 32px;  width: 173px; height: 179px; }
-.astragogh-desktop .sans-titre   { position: absolute; top: 3067px; left: 726px; width: 635px; height: 748px; }
-.astragogh-desktop .sans-titre-2 { position: absolute; top: 2069px; left: 118px; width: 374px; height: 484px; }
-
-/* Section biographie et formulaire */
-.astragogh-desktop .text-wrapper-5 { 
-  position: absolute; 
-  top: 3046px; 
-  left: 62px; 
-  width: 624px; 
-  font-family: "Cinzel", serif; 
-  font-weight: 700; 
-  color: #000; 
-  font-size: 48px; 
-  letter-spacing: -0.96px; }
-
-.astragogh-desktop .text { 
-  display: flex; 
-  flex-direction: column; 
-  width: 516px; 
-  align-items: flex-end; 
-  gap: 48px; 
-  position: absolute; 
-  top: 3133px; 
-  left: 62px; 
-}
-
-.astragogh-desktop .text-2 { 
-  display: flex; 
-  flex-direction: column; 
-  align-items: flex-start; 
-  justify-content: center; 
-  gap: 8px; 
-  position: relative; 
-  align-self: stretch; 
-  width: 100%; 
-}
-
-.astragogh-desktop .text-wrapper-6 { 
-  width: 515px; 
-  font-family: "Libre Baskerville", Georgia, serif; 
-  font-weight: 400; 
-  color: #000; 
-  font-size: 24px; 
-  line-height: 36px; 
-}
-
-.astragogh-desktop .text-wrapper-7 { 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  width: 515px; 
-  font-family: "Libre Baskerville", Georgia, serif; 
-  font-weight: 400; 
-  color: #828282; 
-  font-size: 24px; 
-  line-height: 36px; 
-}
-
-/* Section Contact desktop */
-.astragogh-desktop .section {
-  position: absolute;
-  top: 4075px;
-  left: 0;
-  width: 1440px;
-  height: 236px;
-  display: flex;
-  justify-content: center;
-}
-
-/* Bandeau décoratif avant Contact (pseudo-élément) */
-.astragogh-desktop .section::before {
-  content: "Tableau La Nuit Etoilée";
-  position: absolute;
-  left: 0;
-  top: -211px;
-  width: 1440px;
-  height: 211px;
-  background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/image-12.png")
-              center / cover no-repeat;
-  z-index: 0;
-}
-
-.astragogh-desktop .text-wrapper-8 {
-  margin-top: 89px;
-  width: 625px;
-  height: 65px;
-  margin-left: -655px;
-  font-family: "Cinzel", serif;
-  font-weight: 700;
-  color: #000;
-  font-size: 48px;
-  letter-spacing: -0.96px;
-}
-
-.astragogh-desktop .copy-4 {
-  width: 844px;
-  gap: 40px;
-  top: 247px;
-  left: 111px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-}
-
-.astragogh-desktop .page-title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-}
-
-.astragogh-desktop .text-wrapper-9  {
-  font-family: "Cinzel", serif;
-  font-weight: 700;
-  color: #000;
-  font-size: 64px;
-  letter-spacing: -1.28px;
-}
-
-.astragogh-desktop .text-wrapper-10 {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-weight: 400;
-  color: #000000bf;
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.astragogh-desktop .div-wrapper {
-  all: unset;
-  box-sizing: border-box;
-  display: inline-flex;
-  padding: 20px 32px;
-  position: relative;
-  align-items: center;
-  gap: 8px;
-  background-color: #284d80;
-  border-radius: 8px;
-  box-shadow: var(--button-shadow);
-}
-
-.astragogh-desktop .text-wrapper-11 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-weight: 400;
-  color: #fff;
-  font-size: 24px;
-  line-height: 36px;
-  white-space: nowrap;
-}
-
-.astragogh-desktop .form {
-  display: flex;
-  flex-wrap: wrap;
-  width: 43.47%;
-  align-items: flex-start;
-  gap: 24px 32px;
-  position: absolute;
-  top: 4220px;
-  left: 26.32%;
-}
-
-.astragogh-desktop .input {
-  display: flex;
-  flex-direction: column;
-  width: 626px;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  box-shadow: none;
-}
-
-.astragogh-desktop .input-half {
-  width: calc(50% - 16px);  
-}
-
-.astragogh-desktop .text-wrapper-12 {
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-weight: 400;
-  color: #000;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.astragogh-desktop .field {
-  padding: 12px 16px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex-grow: 1;
-  background-color: #fff;
-  border-radius: 8px;
-  border: 1px solid #dfdfdf;
-  box-shadow: var(--button-shadow);
-  font-family: var(--small-text-font-family, "Inter", "Helvetica Neue", Arial, sans-serif);
-  font-weight: var(--small-text-font-weight, 500);
-  color: #828282;
-  font-size: var(--small-text-font-size, 16px);
-  line-height: var(--small-text-line-height, 150%);
-}
-
-.astragogh-desktop textarea.field {
-  resize: none;
-}
-
-.astragogh-desktop .button-2 {
-  all: unset;
-  box-sizing: border-box;
-  display: flex;
-  width: 299px;
-  justify-content: center;
-  padding: 16px 32px;
-  position: absolute;
-  top: 4680px;
-  left: 1053px;
-  align-items: center;
-  gap: 8px;
-  background-color: #284d80;
-  border-radius: 8px;
-  box-shadow: var(--button-shadow);
-}
-
-.astragogh-desktop .text-wrapper-13 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-weight: 400;
-  color: #fff;
-  font-size: 20px;
-  line-height: 30px;
-  white-space: nowrap;
-}
-
-.astragogh-desktop .text-wrapper-14 {
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-weight: 400;
-  color: #1e1e1e;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-/* ===== Footer : bandeau pleine largeur ===== */
-.site-footer {
-  background:#6fb3aa;
-  width:100vw;
-  margin-left:calc(50% - 50vw);
-  margin-right:calc(50% - 50vw);
-  margin-top:48px;
-}
-
-.site-footer__inner{
-  max-width:var(--container-max, 1200px);
-  margin-inline:auto;
-  padding:28px 16px;
-  min-height:220px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-.site-footer__social{
-  display:flex;
-  gap:24px;
-  align-items:center;
-  justify-content:center;
-}
-
-/* Icônes sociales : taille fixe */
-.site-footer .social{
-  width:24px;
-  height:24px;
-  display:inline-flex;
-}
-
-.site-footer .social svg{
-  width:24px;
-  height:24px;
-  fill:#0c3b5e;
-}
-
-@media (max-width:680px){
-  .site-footer__inner{ min-height:160px; }
-}
-
-/* =========================
-   Layout mobile (≤ 650px)
-   ========================= */
-@media (max-width: 650px) {
-
-  /* Typographie mobile */
-  h1 { font-size: 24px; line-height: 1.25; }
-  h2 { font-size: 20px; line-height: 1.3; }
-  body, p, li { font-size: 16px; }
-
-  /* Conteneur principal en colonne */
-  .astragogh-desktop {
-    min-width: 0;
-    width: 100%;
-    min-height: auto;
-    overflow: visible;
-    position: relative;
-  }
-
-  /* Réinitialisation des positions absolues des images */
-  .astragogh-desktop .image,
-  .astragogh-desktop .image-2,
-  .astragogh-desktop .image-3,
-  .astragogh-desktop .image-4,
-  .astragogh-desktop .image-5,
-  .astragogh-desktop .image-6,
-  .astragogh-desktop .image-7,
-  .astragogh-desktop .sans-titre,
-  .astragogh-desktop .sans-titre-2 {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    width: 100%;
-    height: auto;
-    margin: 0 auto 16px;
-  }
-
-  /* Cartes des œuvres (ratio fixe) */
-  .astragogh-desktop .image-3,
-  .astragogh-desktop .image-4,
-  .astragogh-desktop .image-5,
-  .astragogh-desktop .image-6,
-  .astragogh-desktop .image-7,
-  .astragogh-desktop .sans-titre-2 {
-    margin: 16px auto 0;
-    width: 100%;
-    max-width: 374px;
-    aspect-ratio: 374 / 484;
-    object-fit: cover;
-    display: block;
-  }
-
-  /* Wrapper des images d’œuvres (pour l’icône avion) */
-  .oeuvre-img-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 374px;
-    margin: 16px auto 0;
-    aspect-ratio: 374 / 484;
-    overflow: hidden;
-  }
-
-  .oeuvre-img-wrapper img:first-child {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  /* Image décorative desktop masquée sur mobile */
-  .astragogh-desktop .au-quotidien {
-    display: none;
-  }
-
-  /* ----- En-tête mobile ----- */
-  .astragogh-desktop .navigation-footer {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    margin: 0;
-    object-fit: cover;
-  }
-
-  .astragogh-desktop .navigation {
-    position: static;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 16px 16px 16px 96px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #ffffff;
-  }
-
-  .astragogh-desktop .text-wrapper {
-    margin: 0 0 8px 0;
-    width: auto;
-    height: auto;
-    font-size: 28px;
-    line-height: 1.3;
-  }
-
-  .astragogh-desktop .items {
-    width: calc(100% + 80px);
-    margin-left: -80px;
-    margin-top: 8px;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .astragogh-desktop .div {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-
-  .astragogh-desktop .button {
-    padding: 6px 12px;
-  }
-
-  .astragogh-desktop .text-wrapper-2 {
-    font-size: 14px;
-  }
-
-  /* ----- Bloc héros (titre + intro) ----- */
-  .astragogh-desktop .copy-4 {
-    position: static;
-    width: auto;
-    margin: 24px 16px 32px;
-    gap: 24px;
-  }
-
-  .astragogh-desktop .page-title {
-    align-items: center;
-  }
-
-  .astragogh-desktop .text-wrapper-9 {
-    font-size: 40px;
-    text-align: center;
-    width: 100%;
-  }
-
-  .astragogh-desktop .text-wrapper-10 {
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: left;
-    position: relative;
-    padding-bottom: 40px;
-  }
-
-  /* Icône avion dans le texte d’intro */
-  .astragogh-desktop .text-wrapper-10::after {
-    content: "";
-    position: absolute;
-    right: 8px;
-    bottom: 4px;
-    width: 32px;
-    height: 32px;
-    background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/images-3.png")
-                center / contain no-repeat;
-    pointer-events: none;
-  }
-
-  .astragogh-desktop .div-wrapper {
-    align-self: center;
-    margin-top: 16px;
-  }
-
-  .astragogh-desktop .image {
-    width: 100%;
-    margin: 24px 0 0;
-  }
-
-  /* ----- Section Oeuvres mobile ----- */
-  .astragogh-desktop .text-wrapper-3 {
-    position: static;
-    width: 100%;
-    margin: 32px 0 16px;
-    text-align: center;
-    font-size: 40px;
-  }
-
-  .astragogh-desktop .copy,
-  .astragogh-desktop .copy-2,
-  .astragogh-desktop .copy-3,
-  .astragogh-desktop .copy-5,
-  .astragogh-desktop .copy-6,
-  .astragogh-desktop .copy-7 {
-    position: static;
-    width: 100%;
-    max-width: 374px;
-    margin: 8px auto 24px;
-  }
-
-  .astragogh-desktop .text-wrapper-4 {
-    font-size: 20px;
-  }
-
-  .astragogh-desktop .p {
-    font-size: 18px;
-    line-height: 1.5;
-    justify-content: flex-start;
-  }
-
-  .astragogh-desktop .images,
-  .astragogh-desktop .images-2,
-  .astragogh-desktop .images-3,
-  .astragogh-desktop .images-4,
-  .astragogh-desktop .images-5,
-  .astragogh-desktop .images-6,
-  .astragogh-desktop .images-7 {
-    display: none;
-  }
-
-  /* ----- Biographie mobile ----- */
-  .astragogh-desktop .image-2 {
-    position: static !important;
-    width: 100%;
-    height: auto;
-    margin: 40px 0 0;
-  }
-
-  .astragogh-desktop .sans-titre {
-    position: static !important;
-    width: 80%;
-    margin: 32px auto 0;
-  }
-
-  .astragogh-desktop .text-wrapper-5 {
-    position: static;
-    margin: 24px 0 16px;
-    width: 100%;
-    text-align: center;
-    font-size: 32px;
-  }
-
-  .astragogh-desktop .text {
-    position: static;
-    width: 80%;
-    margin: 0 auto 32px;
-    align-items: flex-start;
-  }
-
-  .astragogh-desktop .text-wrapper-6 {
-    width: auto;
-    font-size: 20px;
-  }
-
-  .astragogh-desktop .text-wrapper-7 {
-    width: auto;
-    font-size: 18px;
-    justify-content: flex-start;
-  }
-
-  /* ----- Contact mobile ----- */
-  .astragogh-desktop .section {
-    position: static;
-    width: 100%;
-    height: auto;
-    margin-top: 32px;
-    display: block;
-    text-align: center;
-  }
-
-  /* Bandeau séparateur avant Contact (mobile) */
-  .astragogh-desktop .section::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 80px;
-    background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/image-12.png")
-                center / cover no-repeat;
-    margin-bottom: 24px;
-  }
-
-  .astragogh-desktop .text-wrapper-8 {
-    margin: 0 0 24px;
-    width: 100%;
-    height: auto;
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .astragogh-desktop .form {
-    position: static;
-    width: auto;
-    margin: 0 16px 16px;
-  }
-
-  .astragogh-desktop .input {
-    width: 100%;
-  }
-
-  .astragogh-desktop .input-2 {
-    position: static;
-    width: auto;
-    margin: 8px 16px 16px;
-  }
-
-  .astragogh-desktop .button-2 {
-    position: static;
-    width: 70%;
-    max-width: 320px;
-    margin: 16px auto 0;
-  }
-}
-
-
-
-
-
-
-
+ *,
+ *::before,
+ *::after { box-sizing: border-box; }
+ 
+ html { -webkit-text-size-adjust: 100%; }
+ 
+ img, video { max-width: 100%; height: auto; display: block; }
+ 
+ iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }
+ 
+ /* Police principale (définie via styleguide.css) */
+ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial); line-height: 1.6; }
+ 
+ .container {
+ max-width: var(--container-max, 1200px);
+ margin-inline: auto;
+ padding-inline: var(--container-pad, 16px);
+ }
+ 
+ /* =========================
+ Mise en page desktop AstraGogh
+ ========================= */
+ 
+ .astragogh-desktop {
+ background-color: #ffffff;
+ overflow: hidden;
+ width: 100%;
+ min-width: 1440px;
+ min-height: 4600px;
+ position: relative;
+ }
+ 
+ 
+ .astragogh-desktop .navigation-footer {
+ position: absolute;
+ top: 21px;
+ left: 33px;
+ width: 172px;
+ height: auto;
+ }
+ 
+ /* Navigation principale */
+ .astragogh-desktop .navigation {
+ position: absolute;
+ width: calc(100% - 174px);
+ top: 23px;
+ left: 191px;
+ height: 164px;
+ display: flex;
+ justify-content: space-between;
+ background-color: #ffffff;
+ }
+ 
+ .astragogh-desktop .text-wrapper {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 62px;
+ width: 263px;
+ height: 41px;
+ margin-left: 56px;
+ font-family: "Cinzel", Helvetica, serif;
+ font-weight: 700;
+ color: #000;
+ font-size: 40px;
+ line-height: 60px;
+ white-space: nowrap;
+ }
+ 
+ .astragogh-desktop .items {
+ display: inline-flex;
+ margin-top: 56px;
+ width: 531px;
+ height: 52px;
+ position: relative;
+ margin-right: 80px;
+ align-items: center;
+ justify-content: flex-end;
+ gap: 48px;
+ }
+ 
+ .astragogh-desktop .div {
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: fit-content;
+ font-family: "Libre Baskerville", Georgia, serif;
+ font-weight: 400;
+ color: #000;
+ font-size: 20px;
+ line-height: 30px;
+ white-space: nowrap;
+ }
+ 
+ .astragogh-desktop .button {
+ all: unset;
+ box-sizing: border-box;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ gap: 8px;
+ padding: 14px 24px;
+ position: relative;
+ flex: 0 0 auto;
+ background-color: #284d80;
+ border-radius: 8px;
+ box-shadow: var(--button-shadow);
+ }
+ 
+ .astragogh-desktop .text-wrapper-2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: fit-content;
+ font-family: "Libre Baskerville", Georgia, serif;
+ font-weight: 400;
+ color: #fff;
+ font-size: 16px;
+ line-height: 24px;
+ white-space: nowrap;
+ }
+ 
+ .astragogh-desktop .text-wrapper-3 {
+ position: absolute;
+ top: 1301px;
+ left: calc(50% - 647px);
+ width: 624px;
+ font-family: "Cinzel", serif;
+ font-weight: 700;
+ color: #000;
+ font-size: 48px;
+ letter-spacing: -0.96px;
+ }
+ 
+ /* Texte des œuvres */
+ .astragogh-desktop .copy,
+ .astragogh-desktop .copy-2,
+ .astragogh-desktop .copy-3 {
+ display: flex;
+ flex-direction: column;
+ width: 381px;
+ align-items: flex-start;
+ justify-content: center;
+ gap: 4px;
+ position: absolute;
+ }
+ .astragogh-desktop .copy { top: 1903px; left: 118px; }
+ .astragogh-desktop .copy-3 { top: 1903px; left: 546px; }
+ .astragogh-desktop .copy-2 { top: 1903px; left: 961px; }
+ 
+ .astragogh-desktop .text-wrapper-4 {
+ font-family: "Libre Baskerville", Georgia, serif;
+ font-weight: 400;
+ color: #000;
+ font-size: 24px;
+ line-height: 36px;
+ }
+ 
+ .astragogh-desktop .p {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ align-self: stretch;
+ font-family: "Libre Baskerville", Georgia, serif;
+ font-weight: 400;
+ color: #828282;
+ font-size: 24px;
+ line-height: 36px;
+ }
+ 
+ /* Images principales des œuvres et biographie */
+ .astragogh-desktop .image { position: absolute; top: 637px; left: 0; width: 1440px; height: 598px; }
+ .astragogh-desktop .image-2 { position: absolute; top: 2769px; left: 0; width: 1440px; height: 211px; }
+ .astragogh-desktop .image-3 { position: absolute; top: 1397px; left: 118px; width: 374px; height: 484px; }
+ .astragogh-desktop .image-4 { position: absolute; top: 1397px; left: 539px; width: 374px; height: 484px; }
+ .astragogh-desktop .image-5 { position: absolute; top: 1397px; left: 961px; width: 374px; height: 484px; }
+ 
+ .astragogh-desktop .copy-5,
+ .astragogh-desktop .copy-6,
+ .astragogh-desktop .copy-7 {
+ width: 381px;
+ justify-content: center;
+ gap: 4px;
+ position: absolute;
+ }
+ .astragogh-desktop .copy-5 { top: 2587px; left: 117px; }
+ .astragogh-desktop .copy-7 { top: 2587px; left: 539px; }
+ .astragogh-desktop .copy-6 { top: 2587px; left: 954px; }
+ 
+ .astragogh-desktop .image-6 { position: absolute; top: 2069px; left: 532px; width: 374px; height: 484px; object-fit: cover; }
+ .astragogh-desktop .image-7 { position: absolute; top: 2069px; left: 954px; width: 374px; height: 484px; object-fit: cover; }
+ 
+ .astragogh-desktop .au-quotidien { position: absolute; top: 21px; left: 32px; width: 173px; height: 179px; }
+ .astragogh-desktop .sans-titre { position: absolute; top: 3067px; left: 726px; width: 635px; height: 748px; }
+ .astragogh-desktop .sans-titre-2 { position: absolute; top: 2069px; left: 118px; width: 374px; height: 484px; }
+ 
+ /* Section biographie et formulaire */
+ .astragogh-desktop .text-wrapper-5 { 
+ position: absolute; 
+ top: 3046px; 
+ left: 62px; 
+ width: 624px; 
+ font-family: "Cinzel", serif; 
+ font-weight: 700; 
+ color: #000; 
+ font-size: 48px; 
+ letter-spacing: -0.96px; }
+ .astragogh-desktop .text { 
+ display: flex; 
+ flex-direction: column; 
+ width: 516px; 
+ align-items: flex-end; 
+ gap: 48px; 
+ position: absolute; 
+ top: 3133px; 
+ left: 62px; 
+ }
+ .astragogh-desktop .text-2 { 
+ display: flex; 
+ flex-direction: column; 
+ align-items: flex-start; 
+ justify-content: center; 
+ gap: 8px; 
+ position: relative; 
+ align-self: stretch; 
+ width: 100%; 
+ }
+ 
+ .astragogh-desktop .text-wrapper-6 { 
+ width: 515px; 
+ font-family: "Libre Baskerville", Georgia, serif; 
+ font-weight: 400; 
+ color: #000; 
+ font-size: 24px; 
+ line-height: 36px; 
+ }
+ .astragogh-desktop .text-wrapper-7 { 
+ display: flex; 
+ align-items: center; 
+ justify-content: center; 
+ width: 515px; 
+ font-family: "Libre Baskerville", Georgia, serif; 
+ font-weight: 400; 
+ color: #828282; 
+ font-size: 24px; 
+ line-height: 36px; 
+ }
+ 
+ /* Section Contact desktop */
+ .astragogh-desktop .section {
+ position: absolute;
+ top: 4075px;
+ left: 0;
+ width: 1440px;
+ height: 236px;
+ display: flex;
+ justify-content: center;
+ }
+ 
+ /* Bandeau décoratif avant Contact (pseudo-élément) */
+ .astragogh-desktop .section::before {
+ content: "Tableau La Nuit Etoilée";
+ position: absolute;
+ left: 0;
+ top: -211px;
+ width: 1440px;
+ height: 211px;
+ background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/image-12.png")
+ center / cover no-repeat;
+ z-index: 0;
+ }
+ 
+ .astragogh-desktop .text-wrapper-8 {
+ margin-top: 89px;
+ width: 625px;
+ height: 65px;
+ margin-left: -655px;
+ font-family: "Cinzel", serif;
+ font-weight: 700;
+ color: #000;
+ font-size: 48px;
+ letter-spacing: -0.96px;
+ }
+ 
+ .astragogh-desktop .copy-4 {
+ width: 844px;
+ gap: 40px;
+ top: 247px;
+ left: 111px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ position: absolute;
+ }
+ 
+ .astragogh-desktop .page-title {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 24px;
+ position: relative;
+ align-self: stretch;
+ width: 100%;
+ }
+ 
+ .astragogh-desktop .text-wrapper-9 {
+ font-family: "Cinzel", serif;
+ font-weight: 700;
+ color: #000;
+ font-size: 64px;
+ letter-spacing: -1.28px;
+ }
+ 
+ .astragogh-desktop .text-wrapper-10 {
+ display: flex;
+ align-items: center;
+ justify-content: left;
+ font-family: "Libre Baskerville", Georgia, serif;
+ font-weight: 400;
+ color: #000000bf;
+ font-size: 24px;
+ line-height: 36px;
+ }
+ 
+ .astragogh-desktop .div-wrapper {
+ all: unset;
+ box-sizing: border-box;
+ display: inline-flex;
+ padding: 20px 32px;
+ position: relative;
+ align-items: center;
+ gap: 8px;
+ background-color: #284d80;
+ border-radius: 8px;
+ box-shadow: var(--button-shadow);
+ }
+ 
+ .astragogh-desktop .text-wrapper-11 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: fit-content;
+ font-family: "Libre Baskerville", Georgia, serif;
+ font-weight: 400;
+ color: #fff;
+ font-size: 24px;
+ line-height: 36px;
+ white-space: nowrap;
+ }
+ 
+ .astragogh-desktop .form {
+ display: flex;
+ flex-wrap: wrap;
+ width: 43.47%;
+ align-items: flex-start;
+ gap: 24px 32px;
+ position: absolute;
+ top: 4220px;
+ left: 26.32%;
+ }
+ 
+ .astragogh-desktop .input {
+ display: flex;
+ flex-direction: column;
+ width: 626px;
+ height: 80px;
+ align-items: flex-start;
+ gap: 8px;
+ position: relative;
+ box-shadow: none;
+ }
+ 
+ .astragogh-desktop .text-wrapper-12 {
+ font-family: "Libre Baskerville", Georgia, serif;
+ font-weight: 400;
+ color: #000;
+ font-size: 16px;
+ line-height: 24px;
+ }
+ 
+ .astragogh-desktop .field {
+ padding: 12px 16px;
+ position: relative;
+ align-self: stretch;
+ width: 100%;
+ flex-grow: 1;
+ background-color: #fff;
+ border-radius: 8px;
+ border: 1px solid #dfdfdf;
+ box-shadow: var(--button-shadow);
+ font-family: var(--small-text-font-family, "Inter", "Helvetica Neue", Arial, sans-serif);
+ font-weight: var(--small-text-font-weight, 500);
+ color: #828282;
+ font-size: var(--small-text-font-size, 16px);
+ line-height: var(--small-text-line-height, 150%);
+ }
+ 
+ .astragogh-desktop textarea.field {
+ resize: none;
+ }
+ 
+ .astragogh-desktop .button-2 {
+ all: unset;
+ box-sizing: border-box;
+ display: flex;
+ width: 299px;
+ justify-content: center;
+ padding: 16px 32px;
+ position: absolute;
+ top: 4460px;
+ left: 1053px;
+ align-items: center;
+ gap: 8px;
+ background-color: #284d80;
+ border-radius: 8px;
+ box-shadow: var(--button-shadow);
+ }
+ 
+ .astragogh-desktop .text-wrapper-13 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: fit-content;
+ font-family: "Libre Baskerville", Georgia, serif;
+ font-weight: 400;
+ color: #fff;
+ font-size: 20px;
+ line-height: 30px;
+ white-space: nowrap;
+ }
+ 
+ .astragogh-desktop .input-2 {
+ display: flex;
+ flex-direction: column;
+ width: 626px;
+ height: 194px;
+ align-items: flex-start;
+ gap: 8px;
+ position: absolute;
+ top: 4328px;
+ left: 379px;
+ box-shadow: none;
+ }
+ 
+ .astragogh-desktop .text-wrapper-14 {
+ font-family: "Libre Baskerville", Georgia, serif;
+ font-weight: 400;
+ color: #1e1e1e;
+ font-size: 16px;
+ line-height: 24px;
+ }
+ 
+ /* ===== Footer : bandeau pleine largeur ===== */
+ .site-footer {
+ background:#6fb3aa;
+ width:100vw;
+ margin-left:calc(50% - 50vw);
+ margin-right:calc(50% - 50vw);
+ margin-top:48px;
+ }
+ 
+ .site-footer__inner{
+ max-width:var(--container-max, 1200px);
+ margin-inline:auto;
+ padding:28px 16px;
+ min-height:220px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ }
+ 
+ .site-footer__social{
+ display:flex;
+ gap:24px;
+ align-items:center;
+ justify-content:center;
+ }
+ 
+ /* Icônes sociales : taille fixe */
+ .site-footer .social{
+ width:24px;
+ height:24px;
+ display:inline-flex;
+ }
+ 
+ .site-footer .social svg{
+ width:24px;
+ height:24px;
+ fill:#0c3b5e;
+ }
+ 
+ @media (max-width:680px){
+ .site-footer__inner{ min-height:160px; }
+ }
+ 
+ /* =========================
+ Layout mobile (≤ 650px)
+ ========================= */
+ @media (max-width: 650px) {
+ 
+ /* Typographie mobile */
+ h1 { font-size: 24px; line-height: 1.25; }
+ h2 { font-size: 20px; line-height: 1.3; }
+ body, p, li { font-size: 16px; }
+ 
+ /* Conteneur principal en colonne */
+ .astragogh-desktop {
+ min-width: 0;
+ width: 100%;
+ min-height: auto;
+ overflow: visible;
+ position: relative;
+ }
+ 
+ /* Réinitialisation des positions absolues des images */
+ .astragogh-desktop .image,
+ .astragogh-desktop .image-2,
+ .astragogh-desktop .image-3,
+ .astragogh-desktop .image-4,
+ .astragogh-desktop .image-5,
+ .astragogh-desktop .image-6,
+ .astragogh-desktop .image-7,
+ .astragogh-desktop .sans-titre,
+ .astragogh-desktop .sans-titre-2 {
+ position: static !important;
+ top: auto !important;
+ left: auto !important;
+ width: 100%;
+ height: auto;
+ margin: 0 auto 16px;
+ }
+ 
+ /* Cartes des œuvres (ratio fixe) */
+ .astragogh-desktop .image-3,
+ .astragogh-desktop .image-4,
+ .astragogh-desktop .image-5,
+ .astragogh-desktop .image-6,
+ .astragogh-desktop .image-7,
+ .astragogh-desktop .sans-titre-2 {
+ margin: 16px auto 0;
+ width: 100%;
+ max-width: 374px;
+ aspect-ratio: 374 / 484;
+ object-fit: cover;
+ display: block;
+ }
+ 
+ /* Wrapper des images d’œuvres (pour l’icône avion) */
+ .oeuvre-img-wrapper {
+ position: relative;
+ width: 100%;
+ max-width: 374px;
+ margin: 16px auto 0;
+ aspect-ratio: 374 / 484;
+ overflow: hidden;
+ }
+ 
+ .oeuvre-img-wrapper img:first-child {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ display: block;
+ }
+ 
+ /* Image décorative desktop masquée sur mobile */
+ .astragogh-desktop .au-quotidien {
+ display: none;
+ }
+ 
+ /* ----- En-tête mobile ----- */
+ .astragogh-desktop .navigation-footer {
+ position: absolute;
+ top: 16px;
+ left: 16px;
+ width: 56px;
+ height: 56px;
+ border-radius: 50%;
+ margin: 0;
+ object-fit: cover;
+ }
+ 
+ .astragogh-desktop .navigation {
+ position: static;
+ width: 100%;
+ height: auto;
+ margin: 0;
+ padding: 16px 16px 16px 96px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ background-color: #ffffff;
+ }
+ 
+ .astragogh-desktop .text-wrapper {
+ margin: 0 0 8px 0;
+ width: auto;
+ height: auto;
+ font-size: 28px;
+ line-height: 1.3;
+ }
+ 
+ .astragogh-desktop .items {
+ width: calc(100% + 80px);
+ margin-left: -80px;
+ margin-top: 8px;
+ height: auto;
+ display: flex;
+ justify-content: space-between;
+ gap: 8px;
+ flex-wrap: wrap;
+ }
+ 
+ .astragogh-desktop .div {
+ font-size: 16px;
+ line-height: 1.4;
+ }
+ 
+ .astragogh-desktop .button {
+ padding: 6px 12px;
+ }
+ 
+ .astragogh-desktop .text-wrapper-2 {
+ font-size: 14px;
+ }
+ 
+ /* ----- Bloc héros (titre + intro) ----- */
+ .astragogh-desktop .copy-4 {
+ position: static;
+ width: auto;
+ margin: 24px 16px 32px;
+ gap: 24px;
+ }
+ 
+ .astragogh-desktop .page-title {
+ align-items: center;
+ }
+ 
+ .astragogh-desktop .text-wrapper-9 {
+ font-size: 40px;
+ text-align: center;
+ width: 100%;
+ }
+ 
+ .astragogh-desktop .text-wrapper-10 {
+ font-size: 18px;
+ line-height: 1.5;
+ text-align: left;
+ position: relative;
+ padding-bottom: 40px;
+ }
+ 
+ /* Icône avion dans le texte d’intro */
+ .astragogh-desktop .text-wrapper-10::after {
+ content: "";
+ position: absolute;
+ right: 8px;
+ bottom: 4px;
+ width: 32px;
+ height: 32px;
+ background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/images-3.png")
+ center / contain no-repeat;
+ pointer-events: none;
+ }
+ 
+ .astragogh-desktop .div-wrapper {
+ align-self: center;
+ margin-top: 16px;
+ }
+ 
+ .astragogh-desktop .image {
+ width: 100%;
+ margin: 24px 0 0;
+ }
+ 
+ /* ----- Section Oeuvres mobile ----- */
+ .astragogh-desktop .text-wrapper-3 {
+ position: static;
+ width: 100%;
+ margin: 32px 0 16px;
+ text-align: center;
+ font-size: 40px;
+ }
+ 
+ .astragogh-desktop .copy,
+ .astragogh-desktop .copy-2,
+ .astragogh-desktop .copy-3,
+ .astragogh-desktop .copy-5,
+ .astragogh-desktop .copy-6,
+ .astragogh-desktop .copy-7 {
+ position: static;
+ width: 100%;
+ max-width: 374px;
+ margin: 8px auto 24px;
+ }
+ 
+ .astragogh-desktop .text-wrapper-4 {
+ font-size: 20px;
+ }
+ 
+ .astragogh-desktop .p {
+ font-size: 18px;
+ line-height: 1.5;
+ justify-content: flex-start;
+ }
+ 
+ .astragogh-desktop .images,
+ .astragogh-desktop .images-2,
+ .astragogh-desktop .images-3,
+ .astragogh-desktop .images-4,
+ .astragogh-desktop .images-5,
+ .astragogh-desktop .images-6,
+ .astragogh-desktop .images-7 {
+ display: none;
+ }
+ 
+ /* ----- Biographie mobile ----- */
+ .astragogh-desktop .image-2 {
+ position: static !important;
+ width: 100%;
+ height: auto;
+ margin: 40px 0 0;
+ }
+ 
+ .astragogh-desktop .sans-titre {
+ position: static !important;
+ width: 80%;
+ margin: 32px auto 0;
+ }
+ 
+ .astragogh-desktop .text-wrapper-5 {
+ position: static;
+ margin: 24px 0 16px;
+ width: 100%;
+ text-align: center;
+ font-size: 32px;
+ }
+ 
+ .astragogh-desktop .text {
+ position: static;
+ width: 80%;
+ margin: 0 auto 32px;
+ align-items: flex-start;
+ }
+ 
+ .astragogh-desktop .text-wrapper-6 {
+ width: auto;
+ font-size: 20px;
+ }
+ 
+ .astragogh-desktop .text-wrapper-7 {
+ width: auto;
+ font-size: 18px;
+ justify-content: flex-start;
+ }
+ 
+ /* ----- Contact mobile ----- */
+ .astragogh-desktop .section {
+ position: static;
+ width: 100%;
+ height: auto;
+ margin-top: 32px;
+ display: block;
+ text-align: center;
+ }
+ 
+ /* Bandeau séparateur avant Contact (mobile) */
+ .astragogh-desktop .section::before {
+ content: "";
+ display: block;
+ width: 100%;
+ height: 80px;
+ background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/image-12.png")
+ center / cover no-repeat;
+ margin-bottom: 24px;
+ }
+ 
+ .astragogh-desktop .text-wrapper-8 {
+ margin: 0 0 24px;
+ width: 100%;
+ height: auto;
+ font-size: 40px;
+ text-align: center;
+ }
+ 
+ .astragogh-desktop .form {
+ position: static;
+ width: auto;
+ margin: 0 16px 16px;
+ }
+ 
+ .astragogh-desktop .input {
+ width: 100%;
+ }
+ 
+ .astragogh-desktop .input-2 {
+ position: static;
+ width: auto;
+ margin: 8px 16px 16px;
+ }
+ 
+ .astragogh-desktop .button-2 {
+ position: static;
+ width: 70%;
+ max-width: 320px;
+ margin: 16px auto 0;
+ }
+ }
+ 
