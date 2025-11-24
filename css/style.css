@@ -22,7 +22,7 @@ a { text-decoration: none; }
 }
 .items .div:hover {
   border-bottom: 2px solid #27408B;
-  transition: border-color 0.3px ease;
+  transition: border-color 0.3s ease;
   cursor: pointer;
 }
 
@@ -30,6 +30,7 @@ a { text-decoration: none; }
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
