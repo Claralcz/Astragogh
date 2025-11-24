@@ -1,7 +1,7 @@
 :root {
   /* ===== Typographie ===== */
   --body-text-font-family: "Inter", "Helvetica Neue", Arial, system-ui, -apple-system, "Segoe UI", "Noto Sans", sans-serif;
-  --body-text-font-weight: 600;
+  --body-text-font-weight: 500;
   --body-text-font-size: 20px;
   --body-text-letter-spacing: 0;
   --body-text-line-height: 150%;
@@ -46,6 +46,7 @@
   --container-max: 1200px;
   --breakpoint-mobile: 650px;
 }
+
 
 
 
