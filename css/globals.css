@@ -409,7 +409,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   justify-content: center;
   padding: 16px 32px;
   position: absolute;
-  top: 4460px;
+  top: 4680px;
   left: 1053px;
   align-items: center;
   gap: 8px;
@@ -439,7 +439,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   align-items: flex-start;
   gap: 8px;
   position: absolute;
-  top: 4328px;
+  top: 4535px;
   left: 379px;
   box-shadow: none;
 }
@@ -807,5 +807,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
+
 
 
