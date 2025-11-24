@@ -9,7 +9,7 @@
 
   --small-text-font-family: "Inter", "Helvetica Neue", Arial, system-ui, -apple-system, "Segoe UI", "Noto Sans", sans-serif;
   --small-text-font-weight: 600;
-  --small-text-font-size: 16px;
+  --small-text-font-size: 20px;
   --small-text-letter-spacing: 0;
   --small-text-line-height: 150%;
   --small-text-font-style: normal;
@@ -46,6 +46,7 @@
   --container-max: 1200px;
   --breakpoint-mobile: 650px;
 }
+
 
 
 
