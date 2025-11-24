@@ -28,8 +28,9 @@ a { text-decoration: none; }
 
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: solid;
 }
+
 
 
 
