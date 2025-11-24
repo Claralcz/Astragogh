@@ -435,19 +435,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   white-space: nowrap;
 }
 
-.astragogh-desktop .input-2 {
-  display: flex;
-  flex-direction: column;
-  width: 626px;
-  height: 194px;
-  align-items: flex-start;
-  gap: 8px;
-  position: absolute;
-  top: 4535px;
-  left: 379px;
-  box-shadow: none;
-}
-
 .astragogh-desktop .text-wrapper-14 {
   font-family: "Libre Baskerville", Georgia, serif;
   font-weight: 400;
@@ -811,6 +798,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
+
 
 
 
