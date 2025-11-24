@@ -44,5 +44,6 @@
 
   /* ===== Mise en page ===== */
   --container-max: 1200px;
-  --breakpoint-mobile: 650px;
+  --breakpoint-mobile: 651px;
 }
+
