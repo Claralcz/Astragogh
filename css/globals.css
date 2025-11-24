@@ -207,6 +207,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   color: #000; 
   font-size: 48px; 
   letter-spacing: -0.96px; }
+
 .astragogh-desktop .text { 
   display: flex; 
   flex-direction: column; 
@@ -217,6 +218,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   top: 3133px; 
   left: 62px; 
 }
+
 .astragogh-desktop .text-2 { 
   display: flex; 
   flex-direction: column; 
@@ -236,6 +238,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   font-size: 24px; 
   line-height: 36px; 
 }
+
 .astragogh-desktop .text-wrapper-7 { 
   display: flex; 
   align-items: center; 
@@ -365,7 +368,6 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
   display: flex;
   flex-direction: column;
   width: 626px;
-  height: 80px;
   align-items: flex-start;
   gap: 8px;
   position: relative;
@@ -798,6 +800,7 @@ body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Sego
     margin: 16px auto 0;
   }
 }
+
 
 
 
