@@ -279,18 +279,6 @@
  justify-content: center;
  }
  
- /* Bandeau décoratif avant Contact (pseudo-élément) */
- .astragogh-desktop .section::before {
- content: "Tableau La Nuit Etoilée";
- position: absolute;
- left: 0;
- top: -211px;
- width: 1440px;
- height: 211px;
- background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/image-12.png")
- center / cover no-repeat;
- z-index: 0;
- }
  
  .astragogh-desktop .text-wrapper-8 {
  margin-top: 89px;
@@ -828,6 +816,7 @@
  }
  }
  
+
 
 
 
