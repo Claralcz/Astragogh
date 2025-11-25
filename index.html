@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- Accueil 全体をラップして id を付与 -->
+    <!-- Accueil -->
     <div id="accueil" class="astragogh-desktop">
 
       <!-- Logo et navigation principale -->
@@ -30,7 +30,6 @@
       <div class="navigation">
         <div class="text-wrapper">AstraGogh</div>
         <div class="items">
-          <!-- ここを div から a に変更 -->
           <a href="#accueil" class="div">Accueil</a>
           <a href="#oeuvres" class="div">Oeuvres</a>
           <a href="#biographie" class="div">Biographie</a>
@@ -58,7 +57,6 @@
       <img class="image" src="Image/Nuit1.webp" alt="Bandeau décoratif tableau La Nuit Etoilée"> 
 
       <!-- ===== Section Oeuvres ===== -->
-      <!-- id を付与 -->
       <div id="oeuvres" class="text-wrapper-3">Oeuvres</div> 
       
       <!-- Œuvre 1 : « Les tournesols » -->
@@ -119,7 +117,6 @@
       <img class="image-2" src="Image/Nuit 2-Picsart-AiImageEnhancer.webp" alt="Bandeau tableau La Nuit Etoilée"> 
       
       <!-- ===== Section Biographie ===== -->
-      <!-- id を付与 -->
       <div id="biographie" class="text-wrapper-5">Biographie</div>
       <img class="sans-titre" src="Image/vangogh.png" alt="Autoportrait de Van Gogh">
       <div class="text"> 
@@ -156,11 +153,25 @@
       
       <!-- Formulaire de contact -->
       <div class="form">
+          <!-- Nom -->
+        <div class="input input-half">
+          <div class="text-wrapper-12">Nom</div>
+          <input class="field" type="text" placeholder="Dupont">
+        </div>
+
+        <!-- Prénom -->
+        <div class="input input-half">
+          <div class="text-wrapper-12">Prénom</div>
+          <input class="field" type="text" placeholder="Marie">
+        </div>
+        
+        <!-- Adresse Mail -->
         <div class="input">
           <div class="text-wrapper-12">Adresse Mail</div>
           <input class="field" placeholder="email@janesfakedomain.net" type="email">
         </div>
       </div>
+         <!-- message -->
       <div class="input-2">
         <div class="text-wrapper-14">Votre message</div>
         <textarea class="field" placeholder="Entrez votre question ou votre message" rows="5"></textarea>
@@ -174,7 +185,6 @@
     <footer class="site-footer" aria-label="Pied de page">
       <div class="site-footer__inner">
         <nav class="site-footer__social" aria-label="Réseaux sociaux">
-          <!-- href="#" → href="#!" に変更 -->
           <a class="social" href="#!" aria-label="Facebook">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.86h2.77l-.44 2.9h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/>
@@ -200,6 +210,7 @@
     </footer>
   </body>
 </htm
+
 
 
 
