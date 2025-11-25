@@ -33,12 +33,14 @@
  
  
  .astragogh-desktop .navigation-footer {
- position: absolute;
- top: 21px;
- left: 33px;
- width: 172px;
- height: auto;
- }
+  position: absolute;
+  top: 21px;
+  left: 33px;
+  width: 172px;
+  height: 172px;        
+  border-radius: 50%;  
+  object-fit: cover;  
+}
  
  /* Navigation principale */
  .astragogh-desktop .navigation {
@@ -824,6 +826,7 @@
  }
  }
  
+
 
 
 
