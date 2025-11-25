@@ -379,6 +379,10 @@
  position: relative;
  box-shadow: none;
  }
+
+.astragogh-desktop .input-half {
+  width: calc(50% - 16px);  
+}
  
  .astragogh-desktop .text-wrapper-12 {
  font-family: "Libre Baskerville", Georgia, serif;
@@ -447,7 +451,7 @@
  align-items: flex-start;
  gap: 8px;
  position: absolute;
- top: 4328px;
+ top: 4440px;
  left: 379px;
  box-shadow: none;
  }
@@ -801,7 +805,11 @@
  .astragogh-desktop .input {
  width: 100%;
  }
- 
+
+ .astragogh-desktop .input-half {
+ width: 100%;
+  }
+
  .astragogh-desktop .input-2 {
  position: static;
  width: auto;
@@ -816,6 +824,7 @@
  }
  }
  
+
 
 
 
