@@ -32,7 +32,7 @@
  }
  
  
- .astragogh-desktop .navigation-footer {
+ .astragogh-desktop .logo-wrapper {
   position: absolute;
   top: 21px;
   left: 33px;
@@ -40,9 +40,14 @@
   height: 172px;      
   border-radius: 50%; 
   overflow: hidden;  
-  display: block;   
 }
 
+.astragogh-desktop .logo-wrapper .navigation-footer {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  display: block;
+}
  
  /* Navigation principale */
  .astragogh-desktop .navigation {
@@ -586,16 +591,22 @@
  }
  
  /* ----- En-tête mobile ----- */
- .astragogh-desktop .navigation-footer {
- position: absolute;
- top: 16px;
- left: 16px;
- width: 56px;
- height: 56px;
- border-radius: 50%;
- margin: 0;
- object-fit: cover;
- }
+ .astragogh-desktop .logo-wrapper {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .astragogh-desktop .logo-wrapper .navigation-footer {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
  
  .astragogh-desktop .navigation {
  position: static;
@@ -828,6 +839,7 @@
  }
  }
  
+
 
 
 
