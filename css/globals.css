@@ -34,7 +34,7 @@
  
  .astragogh-desktop .navigation-footer {
   position: absolute;
-  top: 23px;
+  top: 21px;
   left: 33px;
   width: 172px;
   height: 172px;      
@@ -67,6 +67,7 @@
  font-family: "Cinzel", Helvetica, serif;
  font-weight: 700;
  font-size: 40px;
+ color: #000;
  line-height: 60px;
  white-space: nowrap;
  }
@@ -827,6 +828,7 @@
  }
  }
  
+
 
 
 
