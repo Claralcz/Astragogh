@@ -198,15 +198,14 @@
  }
  
 /* Images principales des œuvres et biographie */
- .astragogh-desktop .image { position: absolute; top: 637px; left: 0; width: 1440px; height: 598px; }
- .astragogh-desktop .image-2 { position: absolute; top: 2769px; left: 0; width: 1440px; height: 211px; }
+ .astragogh-desktop .image { position: absolute; top: 637px; left: 0; width: 1440px; }
+ .astragogh-desktop .image-2 { position: absolute; top: 2769px; left: 0; width: 1440px; }
 /* Bandeau entre Biographie et Contact */
 .astragogh-desktop .image-2-bio {
   position: absolute;
   top: 3900px;  
   left: 0;
   width: 1440px;
-  height: 211px;
 }
  .astragogh-desktop .image-3 { position: absolute; top: 1397px; left: 118px; width: 374px; height: 484px; }
  .astragogh-desktop .image-4 { position: absolute; top: 1397px; left: 539px; width: 374px; height: 484px; }
@@ -832,6 +831,7 @@ opacity: 1;
  margin: 16px auto 0;
  }
  }
+
 
 
 
