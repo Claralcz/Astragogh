@@ -149,35 +149,36 @@
         <div class="text-wrapper-8">Contact</div>
       </div>
       
-      <!-- Formulaire de contact -->
-      <div class="form">
-          <!-- Nom -->
-        <div class="input input-half">
-          <div class="text-wrapper-12">Nom</div>
-          <input class="field" type="text" placeholder="Dupont">
-        </div>
-
-        <!-- Prénom -->
-        <div class="input input-half">
-          <div class="text-wrapper-12">Prénom</div>
-          <input class="field" type="text" placeholder="Marie">
-        </div>
-        
-        <!-- Adresse Mail -->
-        <div class="input">
-          <div class="text-wrapper-12">Adresse Mail</div>
-          <input class="field" placeholder="email@janesfakedomain.net" type="email">
-        </div>
-      </div>
-         <!-- message -->
-      <div class="input-2">
-        <div class="text-wrapper-14">Votre message</div>
-        <textarea class="field" placeholder="Entrez votre question ou votre message" rows="5"></textarea>
-      </div>
-     <button class="button-2">
-        <span class="text-wrapper-13">Envoyer</span>
-     </button>
+  <!-- Formulaire de contact -->
+  <form class="form" action="#" method="post">
+    <!-- Nom -->
+    <div class="input input-half">
+      <div class="text-wrapper-12">Nom</div>
+      <input class="field" type="text" placeholder="Dupont" name="nom">
     </div>
+
+    <!-- Prénom -->
+    <div class="input input-half">
+      <div class="text-wrapper-12">Prénom</div>
+      <input class="field" type="text" placeholder="Marie" name="prenom">
+    </div>
+  
+    <!-- Adresse Mail -->
+    <div class="input">
+      <div class="text-wrapper-12">Adresse Mail</div>
+      <input class="field" placeholder="email@janesfakedomain.net" type="email" name="email">
+    </div>
+
+    <!-- message -->
+    <div class="input-2">
+      <div class="text-wrapper-14">Votre message</div>
+      <textarea class="field" placeholder="Entrez votre question ou votre message" rows="5" name="message"></textarea>
+    </div>
+
+    <button type="submit" class="button-2">
+      <span class="text-wrapper-13">Envoyer</span>
+    </button>
+  </form>
 
     <!-- Pied de page -->
     <footer class="site-footer" aria-label="Pied de page">
@@ -208,6 +209,7 @@
     </footer>
   </body>
 </html>
+
 
 
 
