@@ -417,10 +417,15 @@
  box-shadow: var(--button-shadow);
  font-family: "Libre Baskerville", Georgia, serif;
  font-weight: 400;
- color: #828282;
+ color: #000000;
  font-size: 16px;
  line-height: var(--small-text-line-height, 150%);
  }
+
+.astragogh-desktop .field::placeholder {
+color: #666666;      
+opacity: 1;      
+}
  
  .astragogh-desktop textarea.field {
  resize: none;
@@ -828,6 +833,7 @@
  margin: 16px auto 0;
  }
  }
+
 
 
 
