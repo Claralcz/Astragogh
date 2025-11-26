@@ -24,11 +24,11 @@
  
  .astragogh-desktop {
   background-color: #ffffff;
-  overflow-x: hidden;   
-  overflow-y: visible; 
+  overflow-x: hidden;
+  overflow-y: visible;
   width: 100%;
   min-width: 1440px;
-  min-height: 4800px;   
+  min-height: 4700px; 
   position: relative;
 }
 
@@ -492,7 +492,7 @@
  width:100%;
  margin-left:calc(50% - 50vw);
  margin-right:calc(50% - 50vw);
- margin-top:48px;
+ margin-top:24px;
  }
  
  .site-footer__inner{
@@ -550,7 +550,6 @@
  
  /* Réinitialisation des positions absolues des images */
  .astragogh-desktop .image,
- .astragogh-desktop .image-2,
  .astragogh-desktop .image-3,
  .astragogh-desktop .image-4,
  .astragogh-desktop .image-5,
@@ -759,7 +758,10 @@
  }
  
  /* ----- Biographie mobile ----- */
-.astragogh-desktop .image-2,
+.astragogh-desktop .image-2 {
+  display: none;
+}
+
 .astragogh-desktop .image-2-bio {
   position: static !important;
   width: 100%;
@@ -856,6 +858,7 @@
  margin: 16px auto 0;
  }
  }
+
 
 
 
