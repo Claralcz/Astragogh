@@ -415,10 +415,10 @@
  border-radius: 8px;
  border: 1px solid #dfdfdf;
  box-shadow: var(--button-shadow);
- font-family: var(--small-text-font-family, "Inter", "Helvetica Neue", Arial, sans-serif);
- font-weight: var(--small-text-font-weight, 500);
+ font-family: "Libre Baskerville", Georgia, serif;
+ font-weight: 400;
  color: #828282;
- font-size: var(--small-text-font-size, 16px);
+ font-weight: 400;
  line-height: var(--small-text-line-height, 150%);
  }
  
@@ -827,4 +827,5 @@
  margin: 16px auto 0;
  }
  }
+
 
