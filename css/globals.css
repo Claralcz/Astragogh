@@ -134,6 +134,7 @@
  background-color: #284d80;
  border-radius: 8px;
  box-shadow: var(--button-shadow);
+ cursor: pointer;
  }
  
  .astragogh-desktop .text-wrapper-2 {
@@ -355,6 +356,7 @@
  background-color: #284d80;
  border-radius: 8px;
  box-shadow: var(--button-shadow);
+ cursor: pointer;
  }
  
  .astragogh-desktop .text-wrapper-11 {
@@ -831,6 +833,7 @@ opacity: 1;
  margin: 16px auto 0;
  }
  }
+
 
 
 
