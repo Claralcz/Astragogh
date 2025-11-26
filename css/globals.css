@@ -12,12 +12,6 @@
  /* Police principale (définie via styleguide.css) */
  body { font-family: var(--body-text-font-family, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial); line-height: 1.6; }
  
- .container {
- max-width: var(--container-max, 1200px);
- margin-inline: auto;
- padding-inline: var(--container-pad, 16px);
- }
- 
  /* =========================
  Mise en page desktop AstraGogh
  ========================= */
@@ -204,7 +198,7 @@
  line-height: 36px;
  }
  
- /* Images principales des œuvres et biographie */
+/* Images principales des œuvres et biographie */
  .astragogh-desktop .image { position: absolute; top: 637px; left: 0; width: 1440px; height: 598px; }
  .astragogh-desktop .image-2 { position: absolute; top: 2769px; left: 0; width: 1440px; height: 211px; }
 /* Bandeau entre Biographie et Contact */
@@ -234,7 +228,6 @@
  .astragogh-desktop .image-6 { position: absolute; top: 2069px; left: 532px; width: 374px; height: 484px; object-fit: cover; }
  .astragogh-desktop .image-7 { position: absolute; top: 2069px; left: 954px; width: 374px; height: 484px; object-fit: cover; }
  
- .astragogh-desktop .au-quotidien { position: absolute; top: 21px; left: 32px; width: 173px; height: 179px; }
  .astragogh-desktop .sans-titre { position: absolute; top: 3067px; left: 726px; width: 635px; height: 748px; }
  .astragogh-desktop .sans-titre-2 { position: absolute; top: 2069px; left: 118px; width: 374px; height: 484px; }
  
@@ -300,7 +293,6 @@
  display: flex;
  justify-content: center;
  }
- 
  
  .astragogh-desktop .text-wrapper-8 {
  margin-top: 89px;
@@ -616,12 +608,6 @@
   align-items: center;
   justify-content: center;
 }
-
-.astragogh-desktop .logo-wrapper .navigation-footer {
-  width: 100%;
-  height: auto;
-  display: block;
-}
  
  .astragogh-desktop .navigation {
  position: static;
@@ -747,16 +733,6 @@
  justify-content: flex-start;
  }
  
- .astragogh-desktop .images,
- .astragogh-desktop .images-2,
- .astragogh-desktop .images-3,
- .astragogh-desktop .images-4,
- .astragogh-desktop .images-5,
- .astragogh-desktop .images-6,
- .astragogh-desktop .images-7 {
- display: none;
- }
- 
  /* ----- Biographie mobile ----- */
 .astragogh-desktop .image-2 {
   display: none;
@@ -768,7 +744,6 @@
   height: auto;
   margin: 40px 0 0;
 }
-
  
  .astragogh-desktop .sans-titre {
  position: static !important;
@@ -858,6 +833,7 @@
  margin: 16px auto 0;
  }
  }
+
 
 
 
