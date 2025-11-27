@@ -734,10 +734,7 @@ opacity: 1;
  }
  
  /* ----- Biographie mobile ----- */
-.astragogh-desktop .image-2 {
-  display: none;
-}
-
+.astragogh-desktop .image-2,
 .astragogh-desktop .image-2-bio {
   position: static !important;
   width: 100%;
@@ -833,6 +830,7 @@ opacity: 1;
  margin: 16px auto 0;
  }
  }
+
 
 
 
