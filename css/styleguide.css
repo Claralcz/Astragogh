@@ -14,6 +14,7 @@
   --small-text-line-height: 150%;
   --small-text-font-style: normal;
 
+  /* Serif pour titres et texte de lecture */
   --heading-serif: "Cinzel", serif;
   --reading-serif: "Libre Baskerville", Georgia, serif;
 
@@ -45,6 +46,7 @@
   --container-max: 1200px;
   --breakpoint-mobile: 650px;
 }
+
 
 
 
