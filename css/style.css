@@ -1,7 +1,6 @@
 /* Lissage du rendu du texte */
 * { -webkit-font-smoothing: antialiased; }
 
-/* Dimensions de base de la page */
 html, body {
   margin: 0;
   height: 100%;
@@ -13,6 +12,7 @@ button:focus-visible {
 }
 
 a { text-decoration: none; }
+
 
 
 
