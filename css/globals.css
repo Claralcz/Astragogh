@@ -734,15 +734,12 @@ opacity: 1;
  }
  
  /* ----- Biographie mobile ----- */
-.astragogh-desktop .image-2 {
+.astragogh-desktop .image-2,
+.astragogh-desktop .image-2-bio {
   position: static !important;
   width: 100%;
   height: auto;
   margin: 40px 0 0;
-}
-
-.astragogh-desktop .image-2-bio {
-  display: none;
 }
  
  .astragogh-desktop .sans-titre {
@@ -788,16 +785,6 @@ opacity: 1;
  }
  
  /* Bandeau séparateur avant Contact (mobile) */
- .astragogh-desktop .section::before {
- content: "";
- display: block;
- width: 100%;
- height: 80px;
- background: url("https://c.animaapp.com/mgz5cglmPQrSKB/img/image-12.png")
- center / cover no-repeat;
- margin-bottom: 24px;
- }
- 
  .astragogh-desktop .text-wrapper-8 {
  margin: 0 0 24px;
  width: 100%;
@@ -833,6 +820,7 @@ opacity: 1;
  margin: 16px auto 0;
  }
  }
+
 
 
 
